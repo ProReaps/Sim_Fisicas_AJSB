@@ -16,7 +16,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug-visual-studio/CMakeFiles/3.26.4/CMakeSystem.cmake"
+			"path" : "cmake-build-debug/CMakeFiles/3.26.4/CMakeSystem.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -265,7 +265,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug-visual-studio/CMakeFiles/3.26.4/CMakeCCompiler.cmake"
+			"path" : "cmake-build-debug/CMakeFiles/3.26.4/CMakeCCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -504,7 +504,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug-visual-studio/CMakeFiles/3.26.4/CMakeCXXCompiler.cmake"
+			"path" : "cmake-build-debug/CMakeFiles/3.26.4/CMakeCXXCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -578,7 +578,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug-visual-studio/CMakeFiles/3.26.4/CMakeRCCompiler.cmake"
+			"path" : "cmake-build-debug/CMakeFiles/3.26.4/CMakeRCCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -652,7 +652,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug-visual-studio/CMakeFiles/3.26.4/CMakeCCompiler.cmake"
+			"path" : "cmake-build-debug/CMakeFiles/3.26.4/CMakeCCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -751,26 +751,14 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug-visual-studio/CMakeFiles/3.26.4/CMakeCXXCompiler.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "C:/Program Files (x86)/box2d/lib/cmake/box2d/box2dConfigVersion.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "C:/Program Files (x86)/box2d/lib/cmake/box2d/box2dConfig.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "C:/Program Files (x86)/box2d/lib/cmake/box2d/box2dConfig-debug.cmake"
+			"path" : "cmake-build-debug/CMakeFiles/3.26.4/CMakeCXXCompiler.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Luna/cmake-build-debug-visual-studio",
-		"source" : "E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Luna"
+		"build" : "E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Jupiter/cmake-build-debug",
+		"source" : "E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Jupiter"
 	},
 	"version" : 
 	{

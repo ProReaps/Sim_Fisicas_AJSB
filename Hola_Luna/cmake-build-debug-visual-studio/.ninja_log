@@ -1,7 +1,3 @@
 # ninja log v5
-0	424	7169554936986683	CMakeFiles/Hola_Luna.dir/main.cpp.obj	f5ecdcf5e8b2037d
-424	901	7169554941540461	Hola_Luna.exe	9d3c6ae14ef125d5
-0	549	7169555409583978	CMakeFiles/Hola_Luna.dir/main.cpp.obj	f5ecdcf5e8b2037d
-549	782	7169555411456423	Hola_Luna.exe	9d3c6ae14ef125d5
-0	545	7169555975900700	CMakeFiles/Hola_Luna.dir/main.cpp.obj	f5ecdcf5e8b2037d
-546	749	7169555977484354	Hola_Luna.exe	9d3c6ae14ef125d5
+1	570	7170289692251352	CMakeFiles/Hola_Luna.dir/main.cpp.obj	aa4ee445692d9a71
+571	1475	7170289700790353	Hola_Luna.exe	c0924dac67558c84
