@@ -109,20 +109,23 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Jupiter/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-w9s7x0"
-      binary: "E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Jupiter/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-w9s7x0"
+      source: "E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Jupiter/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-j4zuyf"
+      binary: "E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Jupiter/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-j4zuyf"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/USER/.vcpkg-clion/vcpkg"
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Jupiter/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-w9s7x0
+        Change Dir: E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Jupiter/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-j4zuyf
         
-        Run Build Command(s):C:/Users/USER/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_5b818 && [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_5b818.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_5b818.dir\\ /FS -c C:\\Users\\USER\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c
-        [2/2] cmd.exe /C "cd . && C:\\Users\\USER\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_5b818.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_5b818.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_5b818.exe /implib:cmTC_5b818.lib /pdb:cmTC_5b818.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s):C:/Users/USER/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_b15bc && [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_b15bc.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_b15bc.dir\\ /FS -c C:\\Users\\USER\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\USER\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_b15bc.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_b15bc.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_b15bc.exe /implib:cmTC_b15bc.lib /pdb:cmTC_b15bc.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cmd.exe /C "cd /D E:\\A-Normal_files\\Quinto_semestre\\Sim_Fisicas_AJSB\\Hola_Jupiter\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-j4zuyf && C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/USER/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Jupiter/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-j4zuyf/cmTC_b15bc.exe -installedDir C:/Users/USER/.vcpkg-clion/vcpkg/installed/x64-windows/debug/bin -OutVariable out""
         
       exitCode: 0
   -
@@ -134,20 +137,23 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Jupiter/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-iktyj4"
-      binary: "E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Jupiter/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-iktyj4"
+      source: "E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Jupiter/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-va2d13"
+      binary: "E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Jupiter/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-va2d13"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/USER/.vcpkg-clion/vcpkg"
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Jupiter/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-iktyj4
+        Change Dir: E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Jupiter/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-va2d13
         
-        Run Build Command(s):C:/Users/USER/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_15734 && [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_15734.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_15734.dir\\ /FS -c C:\\Users\\USER\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp
-        [2/2] cmd.exe /C "cd . && C:\\Users\\USER\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_15734.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_15734.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_15734.exe /implib:cmTC_15734.lib /pdb:cmTC_15734.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s):C:/Users/USER/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_ecb86 && [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_ecb86.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_ecb86.dir\\ /FS -c C:\\Users\\USER\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp
+        [2/2] cmd.exe /C "cd . && C:\\Users\\USER\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_ecb86.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_ecb86.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_ecb86.exe /implib:cmTC_ecb86.lib /pdb:cmTC_ecb86.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cmd.exe /C "cd /D E:\\A-Normal_files\\Quinto_semestre\\Sim_Fisicas_AJSB\\Hola_Jupiter\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-va2d13 && C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/USER/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Jupiter/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-va2d13/cmTC_ecb86.exe -installedDir C:/Users/USER/.vcpkg-clion/vcpkg/installed/x64-windows/debug/bin -OutVariable out""
         
       exitCode: 0
 ...
