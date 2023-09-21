@@ -1,0 +1,3 @@
+E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Tema_2/cmake-build-debug/CMakeFiles/Tema_2.dir
+E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Tema_2/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Tema_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
