@@ -10,7 +10,6 @@ int main(){
     b2Vec2 gravity(0.0f, -1.62f);
     b2World world(gravity);
 
-
     //Piso (no cambié nada del código de la clase en la sección de piso)
     //Características del cuerpo
     b2BodyDef groundBodyDef;

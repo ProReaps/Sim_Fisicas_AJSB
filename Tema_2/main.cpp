@@ -5,36 +5,41 @@
 #ifndef M_PI
 #define M_PI 3.14159265358979323846
 #endif
-
+//Descripción:
+//Tiro de una bala de cañon, la densidad la ponemos nosotros, a una velocidad de 900 hm/h
+//a un ángulo de 60 grados, de un tamaño promedio
 int main() {
-    // Define the gravity vector
-    b2Vec2 gravity(0.0f, -9.81f);
+    // Definimos la gravedad con el valor que tendría en la luna
+    b2Vec2 gravity(0.0f, -1.62f);
 
     // Construct a world object, which will hold and simulate the rigid bodies
     b2World world(gravity);
 
-    // Create a dynamic body for the bullet
+    //Creación de un cuerpo dinámico
     b2BodyDef bodyDef;
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(0.0f, 0.0f);
     b2Body* body = world.CreateBody(&bodyDef);
 
-    // Define another box shape for the bullet
+    //Definimos una forma para la bola de cañon, en este caso de 30cm (o 0.3m) que fue
+    //el diametro que encontré en google.
     b2PolygonShape dynamicBox;
-    dynamicBox.SetAsBox(0.2f, 0.05f);
+    dynamicBox.SetAsBox(0.3f, 0.3f);
 
     // Define the dynamic body fixture
     b2FixtureDef fixtureDef;
     fixtureDef.shape = &dynamicBox;
-    fixtureDef.density = 0.01f;
-    fixtureDef.friction = 0.3f;
+    //asignando la densidad del hierro al cuerpo
+    fixtureDef.density = 7874.0f;
+    //Sin friccion porque estamos en la luna
+    //fixtureDef.friction = 0.0f;
 
     // Add the shape to the body
     body->CreateFixture(&fixtureDef);
 
     // Set the initial velocity of the bullet
-    float angle = 45.0f; // Angle in degrees
-    float speed = 400.0f; // Speed in m/s
+    float angle = 60.0f; // Angle in degrees
+    float speed = 900.0f; // Speed in m/s
     float vx = speed * std::cos(angle * M_PI / 180.0f);
     float vy = speed * std::sin(angle * M_PI / 180.0f);
 
@@ -45,11 +50,10 @@ int main() {
     int32 velocityIterations = 6;
     int32 positionIterations = 2;
 
-    for (int i = 0; i < 60; ++i)
+    for (int i = 0; i < 300; ++i)
     {
         world.Step(timeStep, velocityIterations, positionIterations);
         std::cout << body->GetPosition().x << " " << body->GetPosition().y << std::endl;
-
     }
 
     // Remember to clean up
