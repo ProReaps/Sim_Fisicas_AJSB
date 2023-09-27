@@ -50,6 +50,7 @@ int main() {
     int32 velocityIterations = 6;
     int32 positionIterations = 2;
 
+    //Nota: la velocidad se aplica en el centro de masas del cuerpo
     for (int i = 0; i < 300; ++i)
     {
         world.Step(timeStep, velocityIterations, positionIterations);
