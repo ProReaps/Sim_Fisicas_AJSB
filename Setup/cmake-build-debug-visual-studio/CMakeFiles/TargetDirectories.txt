@@ -1,3 +1,0 @@
-E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Setup/cmake-build-debug-visual-studio/CMakeFiles/Setup.dir
-E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Setup/cmake-build-debug-visual-studio/CMakeFiles/edit_cache.dir
-E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Setup/cmake-build-debug-visual-studio/CMakeFiles/rebuild_cache.dir
