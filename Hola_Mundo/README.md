@@ -13,7 +13,7 @@ Esta atracción es la que ejerce el planeta Tierra sobre todos los objetos en é
 La fuerza de gravedad se mide (en el caso de este proyecto) en relación a la aceleración que imprime en los objetos sobre los cuales actúa, siempre que no intervengan otras fuerzas. Esta aceleración se ha calculado, en la superficie terrestre, en unos 9.80665 m/s2.
 
 Por otro lado, la fuerza gravitacional puede medirse a través de distintas fórmulas, dependiendo del enfoque físico específico (mecánica clásica o relativista), y usualmente se representa, como otras fuerzas, en kilogramos de fuerza o en Newtons (N).
-##### Fórmula para calcular la aceleración que 
+##### Fórmula para calcular la aceleración que causa en cuerpos
 $g = G m_2/r^2$
 dónde:
 * $g$ es la Gravedad en $m/s^2$.
