@@ -1,9 +1,11 @@
-# Hola mundo
-
+# Hola_Mundo
 ## Descripción general del programa
  Este programa simula un cuerpo (con forma de cubo) cayendo en la superficie de la tierra usando la librería Box2D como base.
 
  Para poder simular las condiciones en la superficie de la tierra, primero hay que saber cuales son necesariamente definidas dentro del programa y conocerlas individualmente. Menciono que solo serían las condiciones necesarias, porque dependiendo de qué estemos simulando, necesitaremos saber que tanto
+## Tipo de problema
+Esta simulación se trata de un caso de **caída libre**.
+En la caída libre un objeto cae verticalmente desde cierta altura $H$ despreciando cualquier tipo de rozamiento con el aire o cualquier otro obstáculo. Se trata de un movimiento rectilíneo uniformemente acelerado (m.r.u.a.) o movimiento rectilíneo uniformemente variado (m.r.u.v.) en el que la aceleración coincide con el valor de la gravedad.
 ## Condiciones
 ### Gravedad
 ##### ¿Qué es la gravedad?
@@ -29,8 +31,13 @@ Dentro de Box2D, tenemos un punto inicial que directamente tiene las coordenadas
 La densidad es una  magnitud escalar referida a la cantidad de masa en un determinado volumen de una sustancia o un objeto sólido. Dentro de Box2D se usa la unidad de medida de densidad en $kg/m^3$.
 ### Masa
 La masa es una magnitud escalar y de uso común en la física y la química, que expresa la cantidad de materia que hay en un objeto o un cuerpo. No es necesario declarar su valor dentro del código, debido a que Box2D hace el cálculo de forma directa, le asignamos una forma de cierto tamaño al cuerpo y le damos una densidad, la misma librería calcula la masa y hace nuestro trabajo menos pesado.
-### Tiempo de caída
-El tiempo de caída es algo curioso, básicamente, nosotros controlamos la simulación de la caída libre, también controlamos por cuanto tiempo la simulamos.
+El cálculo que hace la librería es:
+$masa = densidad*Volumen$
+### Fricción
+Manejamos este campo dentro de clase como la resistencia del aire. Entrando con más detalle:
+Se denomina resistencia aerodinámica, o resistencia, la fuerza que sufre un cuerpo al moverse a través del aire en la dirección de la velocidad relativa entre el aire y el cuerpo. La resistencia es siempre ocurre en sentido opuesto a dicha velocidad. Esta fuerza se opone al avance de un cuerpo a través del aire.
+### Tiempo de simulación
+El tiempo de simulación es algo curioso, básicamente, nosotros controlamos la simulación de la caída libre, también controlamos por cuanto tiempo la simulamos.
 Dentro del código tenemos estas 2 líneas:
 ```cpp
 	float timeStep = 1.0f/60.0f;
@@ -52,7 +59,8 @@ int main(){ //cubo callendo en la superficie de la luna
     b2World world(gravity);  
   
     //Piso  
-    //Características del cuerpo    b2BodyDef groundBodyDef;  
+    //Características del cuerpo    
+    b2BodyDef groundBodyDef;  
     groundBodyDef.position.Set(0.0f, -10.0f);  
   
     //Creación del cuerpo  
@@ -66,7 +74,8 @@ int main(){ //cubo callendo en la superficie de la luna
     groundBody->CreateFixture(&groundBox, 0.0f);  
   
     //Cuerpo dinamico (caja)  
-    //Características de la caja    b2BodyDef bodyDef;  
+    //Características de la caja    
+    b2BodyDef bodyDef;  
     bodyDef.type = b2_dynamicBody;  
     bodyDef.position.Set(0.0f,20.0f);  
   
@@ -142,6 +151,11 @@ Para este ejercicio le asignamos una densidad arbitraria de $1kg/m^3$.
 ```
 ### Masa
 Como fue mencionado, la masa es calculada dentro de la misma librería, nosotros no la asignamos, pero es necesario asignar un valor de densidad y una forma para que nuestro cuerpo tenga masa.
+### Fricción
+El valor de la resistencia al avance de un cuerpo a través del aire se asigna en la siguiente línea de código. Como nota, se asigna directamente al objeto en sí.
+```cpp
+	fixtureDef.friction = 0.3f;
+```
 ### Tiempo de caída
 El tiempo de caída es asignado en la siguiente parte del código, podemos verlo como tiempo de simulación, instantes de simulación u otras formas, pero lo importante es poder controlarlo.
 
