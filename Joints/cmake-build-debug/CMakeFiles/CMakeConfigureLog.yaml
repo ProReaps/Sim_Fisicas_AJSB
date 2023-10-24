@@ -1,0 +1,279 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCCompilerId.c
+      Microsoft (R) Incremental Linker Version 14.37.32825.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCCompilerId.exe 
+      CMakeCCompilerId.obj 
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\xXPro\\OneDrive\\Documents\\GitHub\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.37.32825.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\xXPro\\OneDrive\\Documents\\GitHub\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-meslav"
+      binary: "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-meslav"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/xXPro/.vcpkg-clion/vcpkg"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-meslav
+        
+        Run Build Command(s):C:/Users/xXPro/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_3eae1 && [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_3eae1.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_3eae1.dir\\ /FS -c C:\\Users\\xXPro\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\xXPro\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_3eae1.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_3eae1.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_3eae1.exe /implib:cmTC_3eae1.lib /pdb:cmTC_3eae1.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cmd.exe /C "cd /D C:\\Users\\xXPro\\OneDrive\\Documents\\GitHub\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-meslav && C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/xXPro/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-meslav/cmTC_3eae1.exe -installedDir C:/Users/xXPro/.vcpkg-clion/vcpkg/installed/x64-windows/debug/bin -OutVariable out""
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kesb07"
+      binary: "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kesb07"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/xXPro/.vcpkg-clion/vcpkg"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kesb07
+        
+        Run Build Command(s):C:/Users/xXPro/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_c3a27 && [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_c3a27.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_c3a27.dir\\ /FS -c C:\\Users\\xXPro\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp
+        [2/2] cmd.exe /C "cd . && C:\\Users\\xXPro\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_c3a27.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c3a27.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_c3a27.exe /implib:cmTC_c3a27.lib /pdb:cmTC_c3a27.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cmd.exe /C "cd /D C:\\Users\\xXPro\\OneDrive\\Documents\\GitHub\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-kesb07 && C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/xXPro/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kesb07/cmTC_c3a27.exe -installedDir C:/Users/xXPro/.vcpkg-clion/vcpkg/installed/x64-windows/debug/bin -OutVariable out""
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckTypeSize.cmake:252 (check_include_file)"
+      - "cmake-build-debug/_deps/sfml-src/cmake/Config.cmake:10 (check_type_size)"
+      - "cmake-build-debug/_deps/sfml-src/CMakeLists.txt:48 (include)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ms4e6e"
+      binary: "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ms4e6e"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_OSX_ARCHITECTURES: "x86_64"
+      CMAKE_OSX_SYSROOT: ""
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/xXPro/.vcpkg-clion/vcpkg"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ms4e6e
+        
+        Run Build Command(s):C:/Users/xXPro/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_51e3b && [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_51e3b.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_51e3b.dir\\ /FS -c C:\\Users\\xXPro\\OneDrive\\Documents\\GitHub\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-ms4e6e\\CheckIncludeFile.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\xXPro\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_51e3b.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_51e3b.dir\\CheckIncludeFile.c.obj  /out:cmTC_51e3b.exe /implib:cmTC_51e3b.lib /pdb:cmTC_51e3b.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cmd.exe /C "cd /D C:\\Users\\xXPro\\OneDrive\\Documents\\GitHub\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-ms4e6e && C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/xXPro/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ms4e6e/cmTC_51e3b.exe -installedDir C:/Users/xXPro/.vcpkg-clion/vcpkg/installed/x64-windows/debug/bin -OutVariable out""
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckTypeSize.cmake:253 (check_include_file)"
+      - "cmake-build-debug/_deps/sfml-src/cmake/Config.cmake:10 (check_type_size)"
+      - "cmake-build-debug/_deps/sfml-src/CMakeLists.txt:48 (include)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z5rjin"
+      binary: "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z5rjin"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_OSX_ARCHITECTURES: "x86_64"
+      CMAKE_OSX_SYSROOT: ""
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/xXPro/.vcpkg-clion/vcpkg"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z5rjin
+        
+        Run Build Command(s):C:/Users/xXPro/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_56080 && [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_56080.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_56080.dir\\ /FS -c C:\\Users\\xXPro\\OneDrive\\Documents\\GitHub\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-z5rjin\\CheckIncludeFile.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\xXPro\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_56080.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_56080.dir\\CheckIncludeFile.c.obj  /out:cmTC_56080.exe /implib:cmTC_56080.lib /pdb:cmTC_56080.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cmd.exe /C "cd /D C:\\Users\\xXPro\\OneDrive\\Documents\\GitHub\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-z5rjin && C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/xXPro/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z5rjin/cmTC_56080.exe -installedDir C:/Users/xXPro/.vcpkg-clion/vcpkg/installed/x64-windows/debug/bin -OutVariable out""
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckTypeSize.cmake:254 (check_include_file)"
+      - "cmake-build-debug/_deps/sfml-src/cmake/Config.cmake:10 (check_type_size)"
+      - "cmake-build-debug/_deps/sfml-src/CMakeLists.txt:48 (include)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xuf9oh"
+      binary: "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xuf9oh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_OSX_ARCHITECTURES: "x86_64"
+      CMAKE_OSX_SYSROOT: ""
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/xXPro/.vcpkg-clion/vcpkg"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xuf9oh
+        
+        Run Build Command(s):C:/Users/xXPro/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_24dca && [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_24dca.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_24dca.dir\\ /FS -c C:\\Users\\xXPro\\OneDrive\\Documents\\GitHub\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-xuf9oh\\CheckIncludeFile.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\xXPro\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_24dca.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_24dca.dir\\CheckIncludeFile.c.obj  /out:cmTC_24dca.exe /implib:cmTC_24dca.lib /pdb:cmTC_24dca.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cmd.exe /C "cd /D C:\\Users\\xXPro\\OneDrive\\Documents\\GitHub\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-xuf9oh && C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/xXPro/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xuf9oh/cmTC_24dca.exe -installedDir C:/Users/xXPro/.vcpkg-clion/vcpkg/installed/x64-windows/debug/bin -OutVariable out""
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckTypeSize.cmake:148 (try_compile)"
+      - "C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckTypeSize.cmake:273 (__check_type_size_impl)"
+      - "cmake-build-debug/_deps/sfml-src/cmake/Config.cmake:10 (check_type_size)"
+      - "cmake-build-debug/_deps/sfml-src/CMakeLists.txt:48 (include)"
+    checks:
+      - "Check size of void*"
+    directories:
+      source: "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-y3rrp7"
+      binary: "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-y3rrp7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_OSX_ARCHITECTURES: "x86_64"
+      CMAKE_OSX_SYSROOT: ""
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/xXPro/.vcpkg-clion/vcpkg"
+    buildResult:
+      variable: "HAVE_SIZEOF_VOID_PTR"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-y3rrp7
+        
+        Run Build Command(s):C:/Users/xXPro/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_dd72d && [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_dd72d.dir\\SIZEOF_VOID_PTR.c.obj /FdCMakeFiles\\cmTC_dd72d.dir\\ /FS -c C:\\Users\\xXPro\\OneDrive\\Documents\\GitHub\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-y3rrp7\\SIZEOF_VOID_PTR.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\xXPro\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_dd72d.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_dd72d.dir\\SIZEOF_VOID_PTR.c.obj  /out:cmTC_dd72d.exe /implib:cmTC_dd72d.lib /pdb:cmTC_dd72d.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cmd.exe /C "cd /D C:\\Users\\xXPro\\OneDrive\\Documents\\GitHub\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-y3rrp7 && C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/xXPro/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-y3rrp7/cmTC_dd72d.exe -installedDir C:/Users/xXPro/.vcpkg-clion/vcpkg/installed/x64-windows/debug/bin -OutVariable out""
+        
+      exitCode: 0
+...

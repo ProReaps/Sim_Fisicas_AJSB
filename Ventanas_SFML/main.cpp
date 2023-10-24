@@ -1,6 +1,5 @@
 #include <SFML/Graphics.hpp>
 #include <Box2D/Box2D.h>
-#include <iostream>
 
 constexpr float SCALE = 30.0f;
 constexpr float OFFS = SCALE*2;
