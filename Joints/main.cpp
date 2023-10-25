@@ -1,5 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include <Box2D/Box2D.h>
+#include <iostream>
 
 constexpr float SCALE = 30.0f;
 constexpr float OFFS = SCALE*2;
@@ -28,6 +29,7 @@ public:
     void update() {
         box.setPosition(SCALE * body->GetPosition().x, SCALE * body->GetPosition().y);
         box.setRotation(body->GetAngle() * 180 / b2_pi);
+        std::cout << body->GetPosition().x << " " << body->GetPosition().y << std::endl;
         //  Make it loop (higher threshold)
         //      x value of position vector is more than window width + an offset value, so it resets to 0
         if((SCALE*body->GetPosition().x)>(1000+OFFS))
@@ -76,6 +78,7 @@ private:
     b2Body *body;
 };
 
+
 int main() {
     sf::RenderWindow window(sf::VideoMode(1000, 900), "SFML works!");
 
@@ -83,6 +86,26 @@ int main() {
     b2World world(gravity);
 
     Cube cube(world, 400, 300);
+    Cube cuboDos(world, 200, 200);
+    cube.getBody()->SetLinearVelocity(b2Vec2(1,0));
+
+    /*
+    b2DistanceJointDef dDef = new b2DistanceJointDef;
+    dDef.Initialize(cube.getBody(), cuboDos.getBody(), cube.getBody()->GetPosition(), cuboDos.getBody()->GetPosition());
+    dDef.collideConnected = true;
+    djf = (b2DistanceJoint) world.CreateJoint(dDef);
+    */
+    b2DistanceJointDef jointDef;
+    jointDef.Initialize(cube.getBody(), cuboDos.getBody(), cube.getBody()->GetPosition(), cuboDos.getBody()->GetPosition());
+    jointDef.collideConnected = true;
+    void b2LinearStiffness(float& stiffness, float& damping,
+                           float frequencyHertz, float dampingRatio,
+                           const b2Body* bodyA, const b2Body* bodyB);
+    float frequencyHz = 4.0f;
+    float dampingRatio = 0.5f;
+    b2LinearStiffness(jointDef.stiffness, jointDef.damping, frequencyHz, dampingRatio, jointDef.bodyA, jointDef.bodyB);
+
+    //physBody->CreateFixture(&fixtureDef);
 
     while (window.isOpen()) {
         sf::Event event;
@@ -120,9 +143,11 @@ int main() {
 
         world.Step(1 / 60.f, 8, 3);
         cube.update();
+        cuboDos.update();
 
         window.clear();
         cube.draw(window);
+        cuboDos.draw(window);
 
         window.display();
     }
