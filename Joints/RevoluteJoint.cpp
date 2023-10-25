@@ -92,6 +92,15 @@ private:
 int main() {
     sf::RenderWindow window(sf::VideoMode(1000, 900), "SFML works!");
 
+    //Visual representation of the center of rotation, very purple, much center
+    sf::RectangleShape aa;
+    //size depends on size, obviously
+    aa.setSize(sf::Vector2f(5, 5));
+    aa.setFillColor(sf::Color::Magenta);
+    //point of origin depends on size
+    aa.setOrigin(2.5f, 2.5f);
+    aa.setPosition(400,300);
+
     b2Vec2 gravity(0.0f, 0.0f);
     b2World world(gravity);
 
@@ -101,13 +110,15 @@ int main() {
 
     //Declare the joint definition variable (maybe that is what this is, could be wrong)
     b2RevoluteJointDef jointDef;
-    jointDef.Initialize(cube.getBody(), cuboDos.getBody(), cube.getBody()->GetWorldCenter());
 
-    //Other parameters
+    //Define main parameters
+    jointDef.bodyA = cuboDos.getBody();
+    jointDef.bodyB = cube.getBody();
+
+    //Set the anchor for bodyA, this will be where it rotates around
     jointDef.localAnchorA.Set(0, 0);
-    //the '(cube.getSizeX()+cuboDos.getSizeX())/(SCALE*2)' bit of this next line makes sure that the shapes we see
-    //are just about touching, while bodyB rotates around bodyA
-    jointDef.localAnchorB.Set((cube.getSizeX()+cuboDos.getSizeX())/(SCALE*2), 0);
+
+    //Don't want it to collide with itself (in this case)
     jointDef.collideConnected = false;
 
     //Other important parameters, trying to turn the joint into a motor
@@ -123,10 +134,10 @@ int main() {
         sf::Event event;
         while (window.pollEvent(event)) {
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
-                joint->SetMotorSpeed(joint->GetMotorSpeed()+(0.1f*b2_pi));
+                joint->SetMotorSpeed(joint->GetMotorSpeed()-(0.1f*b2_pi));
             }
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
-                joint->SetMotorSpeed(joint->GetMotorSpeed()-(0.1f*b2_pi));
+                joint->SetMotorSpeed(joint->GetMotorSpeed()+(0.1f*b2_pi));
             }
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
 
@@ -137,10 +148,11 @@ int main() {
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
                 joint->SetMotorSpeed(0.1f*b2_pi);
                 joint->EnableMotor(true);
+
             }
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::R)) {
                 joint->SetMotorSpeed(0.0f*b2_pi);
-                //joint->EnableMotor(false);
+                joint->EnableMotor(false);
             }
             // The Z key event to close the window
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Z)) {
@@ -149,13 +161,17 @@ int main() {
             }
         }
         world.Step(1 / 60.f, 8, 3);
-        cube.update();
         cuboDos.update();
+        cube.update();
 
+        //Clear everything then draw it again
         window.clear();
         cuboDos.draw(window);
         cube.draw(window);
 
+        //Drawable for the center of rotation
+        window.draw(aa);
+        
         window.display();
     }
     world.DestroyJoint(joint);

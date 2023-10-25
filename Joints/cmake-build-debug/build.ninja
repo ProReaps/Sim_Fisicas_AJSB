@@ -49,7 +49,7 @@ cmake_ninja_workdir = C$:\Users\xXPro\OneDrive\Documents\GitHub\Sim_Fisicas_AJSB
 
 build cmake_object_order_depends_target_Joints: phony || cmake_object_order_depends_target_sfml-graphics cmake_object_order_depends_target_sfml-network cmake_object_order_depends_target_sfml-system cmake_object_order_depends_target_sfml-window
 
-build CMakeFiles\Joints.dir\DistanceJoint.cpp.obj: CXX_COMPILER__Joints_unscanned_Debug C$:\Users\xXPro\OneDrive\Documents\GitHub\Sim_Fisicas_AJSB\Joints\DistanceJoint.cpp || cmake_object_order_depends_target_Joints
+build CMakeFiles\Joints.dir\RevoluteJoint.cpp.obj: CXX_COMPILER__Joints_unscanned_Debug C$:\Users\xXPro\OneDrive\Documents\GitHub\Sim_Fisicas_AJSB\Joints\RevoluteJoint.cpp || cmake_object_order_depends_target_Joints
   DEFINES = -DSFML_STATIC
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
   INCLUDES = -IC:\Users\xXPro\OneDrive\Documents\GitHub\Sim_Fisicas_AJSB\Joints\cmake-build-debug\_deps\sfml-src\include -external:IC:\Users\xXPro\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
@@ -66,7 +66,7 @@ build CMakeFiles\Joints.dir\DistanceJoint.cpp.obj: CXX_COMPILER__Joints_unscanne
 #############################################
 # Link the executable Joints.exe
 
-build Joints.exe: CXX_EXECUTABLE_LINKER__Joints_Debug CMakeFiles\Joints.dir\DistanceJoint.cpp.obj | C$:\Users\xXPro\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\box2d.lib _deps\sfml-build\lib\sfml-system-s-d.lib _deps\sfml-build\lib\sfml-network-s-d.lib _deps\sfml-build\lib\sfml-graphics-s-d.lib _deps\sfml-build\lib\sfml-window-s-d.lib _deps\sfml-build\lib\sfml-system-s-d.lib C$:\Users\xXPro\.vcpkg-clion\vcpkg\installed\x64-windows\lib\freetype.lib || _deps\sfml-build\lib\sfml-graphics-s-d.lib _deps\sfml-build\lib\sfml-network-s-d.lib _deps\sfml-build\lib\sfml-system-s-d.lib _deps\sfml-build\lib\sfml-window-s-d.lib
+build Joints.exe: CXX_EXECUTABLE_LINKER__Joints_Debug CMakeFiles\Joints.dir\RevoluteJoint.cpp.obj | C$:\Users\xXPro\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\box2d.lib _deps\sfml-build\lib\sfml-system-s-d.lib _deps\sfml-build\lib\sfml-network-s-d.lib _deps\sfml-build\lib\sfml-graphics-s-d.lib _deps\sfml-build\lib\sfml-window-s-d.lib _deps\sfml-build\lib\sfml-system-s-d.lib C$:\Users\xXPro\.vcpkg-clion\vcpkg\installed\x64-windows\lib\freetype.lib || _deps\sfml-build\lib\sfml-graphics-s-d.lib _deps\sfml-build\lib\sfml-network-s-d.lib _deps\sfml-build\lib\sfml-system-s-d.lib _deps\sfml-build\lib\sfml-window-s-d.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = C:\Users\xXPro\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\box2d.lib  _deps\sfml-build\lib\sfml-system-s-d.lib  _deps\sfml-build\lib\sfml-network-s-d.lib  _deps\sfml-build\lib\sfml-graphics-s-d.lib  _deps\sfml-build\lib\sfml-window-s-d.lib  ws2_32.lib  _deps\sfml-build\lib\sfml-system-s-d.lib  winmm.lib  gdi32.lib  opengl32.lib  glu32.lib  C:\Users\xXPro\.vcpkg-clion\vcpkg\installed\x64-windows\lib\freetype.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
