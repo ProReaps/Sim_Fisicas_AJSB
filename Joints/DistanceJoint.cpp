@@ -3,7 +3,7 @@
 #include <iostream>
 
 constexpr float SCALE = 30.0f;
-constexpr float OFFS = SCALE*2;
+//constexpr float OFFS = SCALE*2;
 
 class Cube {
 public:
@@ -14,7 +14,7 @@ public:
         body = world.CreateBody(&bodydef);
 
         b2PolygonShape shape;
-        shape.SetAsBox((10.f / 2) / SCALE, (10.f / 2) / SCALE);
+        shape.SetAsBox((10.f) / SCALE, (10.f) / SCALE);
 
         b2FixtureDef fixturedef;
         fixturedef.shape = &shape;
@@ -122,10 +122,12 @@ int main() {
 
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
                 cube.resetPosition();
+
             }
 
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::R)) {
                 cube.stop();
+                cuboDos.stop();
             }
 
             // The Z key event to close the window
