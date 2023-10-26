@@ -171,7 +171,7 @@ int main() {
 
         //Drawable for the center of rotation
         window.draw(aa);
-        
+
         window.display();
     }
     world.DestroyJoint(joint);

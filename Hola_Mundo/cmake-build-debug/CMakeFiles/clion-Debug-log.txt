@@ -1,10 +1,27 @@
-C:\Users\USER\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/USER/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -DCMAKE_TOOLCHAIN_FILE=C:\Users\USER\.vcpkg-clion\vcpkg\scripts\buildsystems\vcpkg.cmake -G Ninja -S E:\A-Normal_files\Quinto_semestre\Sim_Fisicas_AJSB\Setup -B E:\A-Normal_files\Quinto_semestre\Sim_Fisicas_AJSB\Setup\cmake-build-debug
--- Configuring done (0.3s)
--- Generating done (0.0s)
-CMake Warning:
-  Manually-specified variables were not used by the project:
+C:\Users\xXPro\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" -S C:\Users\xXPro\OneDrive\Documents\GitHub\Sim_Fisicas_AJSB\Hola_Mundo -B C:\Users\xXPro\OneDrive\Documents\GitHub\Sim_Fisicas_AJSB\Hola_Mundo\cmake-build-debug
+-- The C compiler identification is MSVC 19.37.32825.0
+-- The CXX compiler identification is MSVC 19.37.32825.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Error at CMakeLists.txt:8 (find_package):
+  Could not find a package configuration file provided by "box2d" with any of
+  the following names:
 
-    CMAKE_TOOLCHAIN_FILE
+    box2dConfig.cmake
+    box2d-config.cmake
+
+  Add the installation prefix of "box2d" to CMAKE_PREFIX_PATH or set
+  "box2d_DIR" to a directory containing one of the above files.  If "box2d"
+  provides a separate development package or SDK, be sure it has been
+  installed.
 
 
--- Build files have been written to: E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Setup/cmake-build-debug
+-- Configuring incomplete, errors occurred!
