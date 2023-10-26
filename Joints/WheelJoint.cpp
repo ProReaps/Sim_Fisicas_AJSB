@@ -90,7 +90,6 @@ public:
     }
     void update(){
         circ.setPosition(SCALE*body->GetPosition().x, SCALE*body->GetPosition().y);
-        //circ.setRotation(body->GetAngle()*180/b2_pi);
     }
     void draw(sf::RenderWindow &win) const{
         win.draw(circ);
@@ -141,14 +140,12 @@ int main() {
 
     //Set the anchor for bodyA, this will be where it rotates around
     jointDef.localAnchorA.Set(0, 0);
-
     //since it locally rotates around (0, 0), it'll rotate around its own center
 
     //Set the anchor for bodyB, this will be where the wheel/bodyA is at (I think)
     jointDef.localAnchorB.Set(-circle.getRadius()/(SCALE*2), (circle.getRadius()*2.5f)/(SCALE));
 
     //The movement axis for bodyA, it gets constrained to this spot with an upper and lower range
-    //b2Vec2 armAxis = new b2Vec2(0.0f,circle.getRadius()/SCALE).Normalize();
     jointDef.localAxisA.Set(0.0f, 1.0f);
 
     //It's a motor! maybe...
@@ -158,9 +155,7 @@ int main() {
 
     //This is for the wheel, the upper and lower range for its movement axis restrict.
     //It can move from -1 * localAxisA.y (lower) to  1 * localAxisA.y (upper)
-    //jointDef.lowerTranslation = -circle.getRadius()/(SCALE*2);
     jointDef.lowerTranslation = 0;
-    //jointDef.upperTranslation = circle.getRadius()/(SCALE*2);
     jointDef.upperTranslation = 0;
     jointDef.enableLimit = true;
 
@@ -213,8 +208,7 @@ int main() {
 
         //Clear everything then draw it again
         window.clear();
-        //Draw the floor first
-        floor.draw(window);
+
         cube2.draw(window);
         circle.draw(window);
 

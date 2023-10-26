@@ -277,7 +277,7 @@
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "WheelJoint.cpp",
+			"path" : "WeldJoint.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

@@ -22,7 +22,7 @@ public:
         b2PolygonShape shape;
         //this used to be divided by two, however, this way makes more sense to me as we are scaling the size
         //variables into their equivalent box2D units
-        shape.SetAsBox((sizeX) / SCALE, (sizeY) / SCALE);
+        shape.SetAsBox((sizeX/2) / SCALE, (sizeY/2) / SCALE);
 
         b2FixtureDef fixturedef;
         fixturedef.shape = &shape;
@@ -69,20 +69,13 @@ int main() {
     b2Vec2 gravity(0.0f, 0.01f);
     b2World world(gravity);
 
-    //Floor body
-    b2BodyDef groundBodyDef;
-    groundBodyDef.position.Set(0.0f, 50.0f);
-    //We take the dinglebop and smooth it out with a bunch of schleem
-    b2Body* groundBody = world.CreateBody(&groundBodyDef);
-    //The schleem is then repurposed for later batches
-    b2PolygonShape groundBox;
-    groundBox.SetAsBox(50000,10.0f);
-    //We take the dinglebop and push it through the grumbo
-    groundBody->CreateFixture(&groundBox, 0.0f);
-
     //Create the cubes from Cube class
     Cube cube(world, 350, 290, 10.0f, 50.0f, sf::Color::Red);
     Cube cube2(world, 200, 300, 60.0f, 40.0f, sf::Color::Blue);
+
+    //This is the floor, we set its type as a static body
+    Cube floor(world, -50000, 750, 500000, 150, sf::Color::Green);
+    floor.getBody()->SetType(b2_staticBody);
 
     //Declare the joint definition variable (maybe that is what this is, could be wrong)
     b2PrismaticJointDef jointDef;
@@ -147,11 +140,14 @@ int main() {
             }
         }
         world.Step(1 / 60.f, 8, 3);
+        floor.update();
         cube2.update();
         cube.update();
 
         //Clear everything then draw it again
         window.clear();
+        //Draw the floor first
+        floor.draw(window);
         cube2.draw(window);
         cube.draw(window);
         

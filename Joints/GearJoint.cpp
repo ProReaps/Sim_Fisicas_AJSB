@@ -13,7 +13,6 @@ public:
     //to translate it to box2D units
     Cube(b2World &world, float x, float y, float sizeX, float sizeY, sf::Color color) {
         size_x = sizeX;
-        size_y = sizeY;
 
         b2BodyDef bodydef;
         bodydef.position.Set(x / SCALE, y / SCALE);
@@ -21,16 +20,17 @@ public:
         body = world.CreateBody(&bodydef);
 
         b2PolygonShape shape;
-        //this used to be divided by two, this makes more sense to me as we are translating the size the box will have
-        //in the window directly into box2D units
-        shape.SetAsBox((sizeX/2) / SCALE, (sizeY/2) / SCALE);
+        //this used to be divided by two, however, this way makes more sense to me as we are scaling the size
+        //variables into their equivalent box2D units
+        shape.SetAsBox((sizeX) / SCALE, (sizeY) / SCALE);
 
         b2FixtureDef fixturedef;
         fixturedef.shape = &shape;
         fixturedef.density = 1.0f;
         body->CreateFixture(&fixturedef);
 
-        //size depends on size, obviously
+        //size depends on size obviously, this is very direct, no need to scale it since it's in the
+        //context of the window already
         box.setSize(sf::Vector2f(sizeX, sizeY));
         box.setFillColor(color);
         //point of origin depends on size
@@ -53,46 +53,60 @@ public:
     b2Body *getBody() {
         return body;
     }
-    float getSizeX() const{
+    float getSizeX(){
         return size_x;
-    }
-    float getSizeY() const{
-        return size_y;
     }
 private:
     sf::RectangleShape box;
     b2Body *body;
     float size_x;
-    float size_y;
 };
 
 
 int main() {
     sf::RenderWindow window(sf::VideoMode(1000, 900), "SFML works!");
 
-    b2Vec2 gravity(0.0f, 0.05f);
+    b2Vec2 gravity(0.0f, 0.01f);
     b2World world(gravity);
 
-    //Create the cubes from Cube class, here they're touching and given the different sizes and masses they should
-    //fall slightly sideways, giving ample opportunity to see the weld joint in effect
-    Cube cube(world, 300, 300, 20.0f, 50.0f, sf::Color::Red);
-    Cube cube2(world, 310, 300, 50.0f, 40.0f, sf::Color::Blue);
+    //Floor body
+    b2BodyDef groundBodyDef;
+    groundBodyDef.position.Set(0.0f, 50.0f);
+    //We take the dinglebop and smooth it out with a bunch of schleem
+    b2Body* groundBody = world.CreateBody(&groundBodyDef);
+    //The schleem is then repurposed for later batches
+    b2PolygonShape groundBox;
+    groundBox.SetAsBox(50000,10.0f);
+    //We take the dinglebop and push it through the grumbo
+    groundBody->CreateFixture(&groundBox, 0.0f);
 
-    //This is the floor, we set the type as a static body
-    Cube floor(world, -50000, 750, 500000, 150, sf::Color::Green);
-    floor.getBody()->SetType(b2_staticBody);
+    //Create the cubes from Cube class
+    Cube cube(world, 350, 290, 10.0f, 50.0f, sf::Color::Red);
+    Cube cube2(world, 200, 300, 60.0f, 40.0f, sf::Color::Blue);
 
-    //Declare the joint definition variable (I am now almost sure of this, could this be character development?)
-    b2WeldJointDef jointDef;
+    //Declare the joint definition variable (maybe that is what this is, could be wrong)
+    b2PrismaticJointDef jointDef;
 
-    //Initialize the joint, then set the anchors for both bodies, should be at about the midway point in y and
-    //right up against each other in x
-    jointDef.Initialize(cube.getBody(), cube2.getBody(), b2Vec2(cube.getBody()->GetWorldCenter().x+(cube.getSizeX()/2),cube.getBody()->GetWorldCenter().x));
-    jointDef.localAnchorA.Set(cube.getSizeX()/(SCALE*2), 0);
-    jointDef.localAnchorB.Set(-cube2.getSizeX()/(SCALE*2), 0);
+    b2Vec2 worldAxis(0.0f, 1.0f);
+
+    jointDef.Initialize(cube.getBody(), cube2.getBody(), cube.getBody()->GetWorldCenter(), worldAxis);
+
+    //Define main parameters
+    jointDef.localAxisA.Set(0,1);
+    jointDef.upperTranslation = 5.0f;
+    jointDef.lowerTranslation = 1.25f;
+    jointDef.enableLimit = true;
+    jointDef.collideConnected = false;
+    jointDef.localAnchorA.Set(-(cube.getSizeX()/(SCALE*2)), -2.3f);
+    jointDef.localAnchorB.Set(cube2.getSizeX()/(SCALE*2)+1.0f, -1.9f);
+
+    //Other important parameters, trying to turn the joint into a motor
+    jointDef.maxMotorForce = 1.0f;
+    jointDef.motorSpeed = 0.0f;
+    jointDef.enableMotor = true;
 
     //Actually create the joint in world space
-    b2WeldJoint* joint = (b2WeldJoint*)world.CreateJoint(&jointDef);
+    b2PrismaticJoint* joint = (b2PrismaticJoint*)world.CreateJoint(&jointDef);
 
     //Window loop
     while (window.isOpen()) {
@@ -100,27 +114,29 @@ int main() {
         while (window.pollEvent(event)) {
             //Move body B right
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
+                //cube2.getBody()->ApplyForceToCenter(b2Vec2(5.0f, 0.0f), true);
                 cube2.getBody()->SetLinearVelocity(b2Vec2(0.5f,0.0f));
             }
             //Move body B left
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
-                cube2.getBody()->SetLinearVelocity(b2Vec2(-0.5f, 0.0f));
+                //cube2.getBody()->ApplyForceToCenter(b2Vec2(-5.0f, 0.0f), true);
+                cube2.getBody()->SetLinearVelocity(b2Vec2(-0.5f,0.0f));
             }
             //Move body A up
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
-                cube.getBody()->SetLinearVelocity(b2Vec2(0.0f,-0.5f));
+                joint->SetMotorSpeed(0.25f);
             }
             //Move body A down
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
-                cube2.getBody()->SetLinearVelocity(b2Vec2(0.0f,0.5f));
+                joint->SetMotorSpeed(-0.25f);
             }
             //Set body A speed to 0, 0
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
-                cube.getBody()->SetLinearVelocity(b2Vec2(0.0f,0.0f));
+                cube2.getBody()->SetLinearVelocity(b2Vec2(0.0f,0.0f));
             }
             //Set motor speed to 0
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::R)) {
-                cube.resetPosition();
+                joint->SetMotorSpeed(0.0f);
             }
             // The Z key event to close the window
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Z)) {
@@ -131,13 +147,11 @@ int main() {
             }
         }
         world.Step(1 / 60.f, 8, 3);
-        floor.update();
         cube2.update();
         cube.update();
 
         //Clear everything then draw it again
         window.clear();
-        floor.draw(window);
         cube2.draw(window);
         cube.draw(window);
         

@@ -30,34 +30,6 @@ public:
         box.setPosition(SCALE * body->GetPosition().x, SCALE * body->GetPosition().y);
         box.setRotation(body->GetAngle() * 180 / b2_pi);
         std::cout << body->GetPosition().x << " " << body->GetPosition().y << std::endl;
-
-        /* This part kind of makes it break
-        //  Make it loop (higher threshold)
-        //      x value of position vector is more than window width + an offset value, so it resets to 0
-        if((SCALE*body->GetPosition().x)>(1000+OFFS))
-        {
-            body->SetTransform(b2Vec2(0, body->GetPosition().y),body->GetAngle());
-        }
-        //      y value of position vector is more than window height + an offset value, so it resets to 0
-        if((SCALE*body->GetPosition().y)>(900+OFFS))
-        {
-            body->SetTransform(b2Vec2(body->GetPosition().x, 0),body->GetAngle());
-        }
-
-        //  Make it loop (lower threshold)
-        //      x value of position vector is less than 0 - an offset value, so it resets to window width
-        if((SCALE*body->GetPosition().x)<(0-OFFS))
-        {
-            body->SetTransform(b2Vec2(1000/SCALE, body->GetPosition().y),body->GetAngle());
-        }
-        //      y value of position vector is less than 0 - an offset value, so it resets to window height
-        if((SCALE*body->GetPosition().y)<(0-OFFS))
-        {
-            body->SetTransform(b2Vec2(body->GetPosition().x, 900/SCALE),body->GetAngle());
-        }
-        //  In both cases, the offset value helps to only reset it once, since the 'bounds' are farther away
-        //  than the points at which it reappears
-         */
     }
 
     void draw(sf::RenderWindow &win) const {
