@@ -1,3 +1,0 @@
-E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Poligonos/cmake-build-debug/CMakeFiles/Poligonos.dir
-E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Poligonos/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Poligonos/cmake-build-debug/CMakeFiles/rebuild_cache.dir

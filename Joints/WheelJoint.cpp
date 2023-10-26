@@ -23,11 +23,12 @@ public:
         b2PolygonShape shape;
         //this used to be divided by two, this makes more sense to me as we are translating the size the box will have
         //in the window directly into box2D units
-        shape.SetAsBox((sizeX) / SCALE, (sizeY) / SCALE);
+        shape.SetAsBox((sizeX/2) / SCALE, (sizeY/2) / SCALE);
 
         b2FixtureDef fixturedef;
         fixturedef.shape = &shape;
         fixturedef.density = 1.0f;
+        fixturedef.friction = 3.0f;
         body->CreateFixture(&fixturedef);
 
         //size depends on size, obviously
@@ -64,28 +65,70 @@ private:
     float size_x;
     float size_y;
 };
+class Circle {
+public:
+    Circle(b2World &world, float x, float y, float Radius, sf::Color color){
+        radius = Radius;
+
+        b2BodyDef bodydef;
+        bodydef.position.Set(x / SCALE, y / SCALE);
+        bodydef.type = b2_dynamicBody;
+        body = world.CreateBody(&bodydef);
+
+        b2CircleShape shape;
+        shape.m_radius = Radius/SCALE*2;
+        shape.m_p.Set(0,0);
+
+        b2FixtureDef fixturedef;
+        fixturedef.shape = &shape;
+        fixturedef.density = 1.0f;
+        fixturedef.friction = 3.0f;
+        body->CreateFixture(&fixturedef);
+
+        circ.setRadius(Radius);
+        circ.setFillColor(color);
+    }
+    void update(){
+        circ.setPosition(SCALE*body->GetPosition().x, SCALE*body->GetPosition().y);
+        //circ.setRotation(body->GetAngle()*180/b2_pi);
+    }
+    void draw(sf::RenderWindow &win) const{
+        win.draw(circ);
+    }
+    void resetPosition() {
+        body->SetTransform(b2Vec2(0, 0), body->GetAngle());
+    }
+    void stop() {
+        body->SetLinearVelocity(b2Vec2(0, 0));
+    }
+    b2Body *getBody() {
+        return body;
+    }
+    float getRadius() const{
+        return radius;
+    }
+private:
+    sf::CircleShape circ;
+    b2Body *body;
+    float size_x;
+    float size_y;
+    float radius;
+};
 
 int main() {
     sf::RenderWindow window(sf::VideoMode(1000, 900), "SFML works!");
 
-    b2Vec2 gravity(0.0f, 0.05f);
+    b2Vec2 gravity(0.0f, 0.1f);
     b2World world(gravity);
 
-    //Floor body
-    b2BodyDef groundBodyDef;
-    groundBodyDef.position.Set(0.0f, 75.0f);
-    //Create the floor body
-    b2Body* groundBody = world.CreateBody(&groundBodyDef);
-    //Create the shape
-    b2PolygonShape groundBox;
-    groundBox.SetAsBox(50000,15.0f);
-    //Create the fixture, so it is finally in the simulation world
-    groundBody->CreateFixture(&groundBox, 0.0f);
-
     //Create the cubes from Cube class
-    Cube cube(world, 400, 300, 25.0f, 25.0f, sf::Color::Red); //This one is the wheel
-    Cube cube2(world, 400, 325, 25.0f, 25.0f, sf::Color::Blue); //This one is NOT a wheel
-                                                                                            //They look almost the same
+    Circle circle(world, 375, 350, 12.5f, sf::Color::Red); //This one is the wheel
+    Cube cube2(world, 400, 325, 40.0f, 25.0f, sf::Color::Blue); //This one is NOT a wheel
+
+    //This is the floor, we set the type as a static body
+    Cube floor(world, -50000, 750, 500000, 150, sf::Color::Green);
+    floor.getBody()->SetType(b2_staticBody);
+
     //Set this one as a bit of a static one? We're just restricting rotation, not movement
     cube2.getBody()->SetFixedRotation(true);
 
@@ -93,29 +136,32 @@ int main() {
     b2WheelJointDef jointDef;
 
     //Define main parameters
-    jointDef.bodyA = cube.getBody();
+    jointDef.bodyA = circle.getBody();
     jointDef.bodyB = cube2.getBody();
 
     //Set the anchor for bodyA, this will be where it rotates around
     jointDef.localAnchorA.Set(0, 0);
+
     //since it locally rotates around (0, 0), it'll rotate around its own center
 
     //Set the anchor for bodyB, this will be where the wheel/bodyA is at (I think)
-    jointDef.localAnchorB.Set(0, (cube2.getSizeY()/(SCALE)));
+    jointDef.localAnchorB.Set(-circle.getRadius()/(SCALE*2), (circle.getRadius()*2.5f)/(SCALE));
 
     //The movement axis for bodyA, it gets constrained to this spot with an upper and lower range
-    jointDef.localAxisA.Set(0.0f,1.0f);
-    //In this case it should
+    //b2Vec2 armAxis = new b2Vec2(0.0f,circle.getRadius()/SCALE).Normalize();
+    jointDef.localAxisA.Set(0.0f, 1.0f);
 
     //It's a motor! maybe...
-    jointDef.maxMotorTorque = 5.0f;
+    jointDef.maxMotorTorque = 10.0f;
     jointDef.motorSpeed = 0.0f;
     jointDef.enableMotor = true;
 
     //This is for the wheel, the upper and lower range for its movement axis restrict.
     //It can move from -1 * localAxisA.y (lower) to  1 * localAxisA.y (upper)
-    jointDef.lowerTranslation = -1.0f;
-    jointDef.upperTranslation = 1.0f;
+    //jointDef.lowerTranslation = -circle.getRadius()/(SCALE*2);
+    jointDef.lowerTranslation = 0;
+    //jointDef.upperTranslation = circle.getRadius()/(SCALE*2);
+    jointDef.upperTranslation = 0;
     jointDef.enableLimit = true;
 
     //I do not want to activate collisions for the connected bodies, since their shapes are squares there
@@ -131,10 +177,10 @@ int main() {
         sf::Event event;
         while (window.pollEvent(event)) {
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
-                joint->SetMotorSpeed(joint->GetMotorSpeed()-(0.3f*b2_pi));
+                joint->SetMotorSpeed(joint->GetMotorSpeed()-(0.5f*b2_pi));
             }
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
-                joint->SetMotorSpeed(joint->GetMotorSpeed()+(0.3f*b2_pi));
+                joint->SetMotorSpeed(joint->GetMotorSpeed()+(0.5f*b2_pi));
             }
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
 
@@ -147,7 +193,7 @@ int main() {
             }
             //Reset position to 0,0
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::R)) {
-                cube.resetPosition();
+                circle.resetPosition();
                 joint->SetMotorSpeed(0.0f*b2_pi);
             }
             // The Z key event to close the window
@@ -161,13 +207,16 @@ int main() {
             }
         }
         world.Step(1 / 60.f, 8, 3);
+        floor.update();
         cube2.update();
-        cube.update();
+        circle.update();
 
         //Clear everything then draw it again
         window.clear();
+        //Draw the floor first
+        floor.draw(window);
         cube2.draw(window);
-        cube.draw(window);
+        circle.draw(window);
 
         window.display();
     }
