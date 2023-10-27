@@ -1,0 +1,3 @@
+D:/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Mundo/cmake-build-debug/CMakeFiles/Setup.dir
+D:/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Mundo/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Mundo/cmake-build-debug/CMakeFiles/rebuild_cache.dir

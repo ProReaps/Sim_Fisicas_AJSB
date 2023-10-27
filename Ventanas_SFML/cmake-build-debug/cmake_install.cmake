@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Ventanas_SFML
+# Install script for directory: D:/Quinto_semestre/Sim_Fisicas_AJSB/Ventanas_SFML
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Ventanas_SFML/cmake-build-debug/_deps/sfml-build/cmake_install.cmake")
+  include("D:/Quinto_semestre/Sim_Fisicas_AJSB/Ventanas_SFML/cmake-build-debug/_deps/sfml-build/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Ventanas_SFML/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Quinto_semestre/Sim_Fisicas_AJSB/Ventanas_SFML/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

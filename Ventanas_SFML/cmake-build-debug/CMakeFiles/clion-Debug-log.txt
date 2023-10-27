@@ -1,16 +1,40 @@
-C:\Users\xXPro\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/xXPro/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -DCMAKE_TOOLCHAIN_FILE=C:\Users\xXPro\.vcpkg-clion\vcpkg\scripts\buildsystems\vcpkg.cmake -G Ninja -S C:\Users\xXPro\OneDrive\Documents\GitHub\Sim_Fisicas_AJSB\Ventanas_SFML -B C:\Users\xXPro\OneDrive\Documents\GitHub\Sim_Fisicas_AJSB\Ventanas_SFML\cmake-build-debug
-CMake Warning (dev) at C:/Users/xXPro/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+C:\Users\Administrator\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/Administrator/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -DCMAKE_TOOLCHAIN_FILE=C:\Users\Administrator\.vcpkg-clion\vcpkg\scripts\buildsystems\vcpkg.cmake -G Ninja -S D:\Quinto_semestre\Sim_Fisicas_AJSB\Ventanas_SFML -B D:\Quinto_semestre\Sim_Fisicas_AJSB\Ventanas_SFML\cmake-build-debug
+-- The C compiler identification is MSVC 19.37.32825.0
+-- The CXX compiler identification is MSVC 19.37.32825.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of void*
+-- Check size of void* - done
+-- Found OpenGL: opengl32   
+-- Found OpenAL: C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/OpenAL32.lib  
+CMake Warning (dev) at C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
   The package name passed to `find_package_handle_standard_args` (VORBIS)
   does not match the name of the calling package (Vorbis).  This can lead to
   problems in calling code that expects `find_package` result variables
   (e.g., `_FOUND`) to follow a certain pattern.
 Call Stack (most recent call first):
   cmake-build-debug/_deps/sfml-src/cmake/Modules/FindVorbis.cmake:25 (find_package_handle_standard_args)
-  C:/Users/xXPro/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)
+  C:/Users/Administrator/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)
   cmake-build-debug/_deps/sfml-src/cmake/Macros.cmake:279 (find_package)
   cmake-build-debug/_deps/sfml-src/src/SFML/Audio/CMakeLists.txt:70 (sfml_find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Configuring done (1.0s)
--- Generating done (0.1s)
--- Build files have been written to: C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Ventanas_SFML/cmake-build-debug
+-- Found VORBIS: C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/vorbisenc.lib;C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/vorbisfile.lib;C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/vorbis.lib;C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/ogg.lib  
+-- Found FLAC: C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/FLAC.lib  
+-- Configuring done (5.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: D:/Quinto_semestre/Sim_Fisicas_AJSB/Ventanas_SFML/cmake-build-debug

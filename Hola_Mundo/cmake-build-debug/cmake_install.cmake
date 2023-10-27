@@ -1,4 +1,4 @@
-# Install script for directory: E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Setup
+# Install script for directory: D:/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Mundo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,11 +32,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Users/USER/AppData/Local/Programs/CLion/bin/mingw/bin/objdump.exe")
-endif()
-
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()
@@ -45,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Setup/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Quinto_semestre/Sim_Fisicas_AJSB/Hola_Mundo/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

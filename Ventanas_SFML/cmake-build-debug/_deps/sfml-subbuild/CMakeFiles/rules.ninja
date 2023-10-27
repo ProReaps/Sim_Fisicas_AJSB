@@ -23,7 +23,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\Users\xXPro\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\xXPro\OneDrive\Documents\GitHub\Sim_Fisicas_AJSB\Ventanas_SFML\cmake-build-debug\_deps\sfml-subbuild -BC:\Users\xXPro\OneDrive\Documents\GitHub\Sim_Fisicas_AJSB\Ventanas_SFML\cmake-build-debug\_deps\sfml-subbuild
+  command = C:\Users\Administrator\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SD:\Quinto_semestre\Sim_Fisicas_AJSB\Ventanas_SFML\cmake-build-debug\_deps\sfml-subbuild -BD:\Quinto_semestre\Sim_Fisicas_AJSB\Ventanas_SFML\cmake-build-debug\_deps\sfml-subbuild
   description = Re-running CMake...
   generator = 1
 
@@ -32,7 +32,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = C:\Users\xXPro\AppData\Local\Programs\CLion\bin\ninja\win\x64\ninja.exe $FILE_ARG -t clean $TARGETS
+  command = C:\Users\Administrator\AppData\Local\Programs\CLion\bin\ninja\win\x64\ninja.exe $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -40,6 +40,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = C:\Users\xXPro\AppData\Local\Programs\CLion\bin\ninja\win\x64\ninja.exe -t targets
+  command = C:\Users\Administrator\AppData\Local\Programs\CLion\bin\ninja\win\x64\ninja.exe -t targets
   description = All primary targets available:
 
