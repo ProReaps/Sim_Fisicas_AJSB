@@ -1,0 +1,21 @@
+# ninja log v5
+0	49	7211618364402556	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir	f741cdfe680a136
+0	49	7211618364402556	D:/Quinto_semestre/Sim_Fisicas_AJSB/Proyecto_Parcial2/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir	f741cdfe680a136
+49	14649	7211618510413142	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download	43c597c059770141
+49	14649	7211618510413142	D:/Quinto_semestre/Sim_Fisicas_AJSB/Proyecto_Parcial2/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download	43c597c059770141
+14649	14770	0	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	e4401c66d99a1473
+14649	14770	0	D:/Quinto_semestre/Sim_Fisicas_AJSB/Proyecto_Parcial2/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	e4401c66d99a1473
+14771	14817	7211618512093536	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	feefd9f6dca9a252
+14771	14817	7211618512093536	D:/Quinto_semestre/Sim_Fisicas_AJSB/Proyecto_Parcial2/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	feefd9f6dca9a252
+14817	14867	7211618512582222	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	15c40682436a0073
+14817	14867	7211618512582222	D:/Quinto_semestre/Sim_Fisicas_AJSB/Proyecto_Parcial2/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	15c40682436a0073
+14867	14926	7211618513177088	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	c7369a3f2701d0f0
+14867	14926	7211618513177088	D:/Quinto_semestre/Sim_Fisicas_AJSB/Proyecto_Parcial2/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	c7369a3f2701d0f0
+14927	14974	7211618513655985	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	287524ece307598c
+14927	14974	7211618513655985	D:/Quinto_semestre/Sim_Fisicas_AJSB/Proyecto_Parcial2/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	287524ece307598c
+14974	15020	7211618514124753	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	6a9675179c56f421
+14974	15020	7211618514124753	D:/Quinto_semestre/Sim_Fisicas_AJSB/Proyecto_Parcial2/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	6a9675179c56f421
+15020	15082	7211618514743276	CMakeFiles/sfml-populate-complete	7cf9359bb640bee0
+15020	15082	7211618514743276	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	7cf9359bb640bee0
+15020	15082	7211618514743276	D:/Quinto_semestre/Sim_Fisicas_AJSB/Proyecto_Parcial2/cmake-build-debug/_deps/sfml-subbuild/CMakeFiles/sfml-populate-complete	7cf9359bb640bee0
+15020	15082	7211618514743276	D:/Quinto_semestre/Sim_Fisicas_AJSB/Proyecto_Parcial2/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	7cf9359bb640bee0
