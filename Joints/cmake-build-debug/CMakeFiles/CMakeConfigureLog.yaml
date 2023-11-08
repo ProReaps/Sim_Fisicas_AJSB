@@ -109,37 +109,41 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pi6o75"
-      binary: "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pi6o75"
+      source: "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-iotd09"
+      binary: "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-iotd09"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/Administrator/.vcpkg-clion/vcpkg"
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pi6o75
+        Change Dir: D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-iotd09
         
-        Run Build Command(s):C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_3913d\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_3913d.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_3913d.dir\\build
-        Building C object CMakeFiles/cmTC_3913d.dir/CMakeCCompilerABI.c.obj
-        	C:\\Users\\Administrator\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_3913d.dir\\CMakeCCompilerABI.c.obj.d --working-dir=D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-pi6o75 --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\nmEB9B.tmp
+        Run Build Command(s):C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_853a7\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_853a7.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_853a7.dir\\build
+        Building C object CMakeFiles/cmTC_853a7.dir/CMakeCCompilerABI.c.obj
+        	C:\\Users\\Administrator\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_853a7.dir\\CMakeCCompilerABI.c.obj.d --working-dir=D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-iotd09 --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\nmAAA2.tmp
         CMakeCCompilerABI.c
-        Linking C executable cmTC_3913d.exe
-        	C:\\Users\\Administrator\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_3913d.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_3913d.dir\\objects1.rsp @C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\nmEBDA.tmp
+        Linking C executable cmTC_853a7.exe
+        	C:\\Users\\Administrator\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_853a7.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_853a7.dir\\objects1.rsp @C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\nmAB01.tmp
         Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_3913d.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_3913d.dir/embed.manifest
+        Create CMakeFiles\\cmTC_853a7.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_853a7.dir/embed.manifest
         RC Pass 1:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_3913d.dir/manifest.res CMakeFiles\\cmTC_3913d.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_853a7.dir/manifest.res CMakeFiles\\cmTC_853a7.dir/manifest.rc
         LINK Pass 1:
-        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_3913d.dir\\objects1.rsp /out:cmTC_3913d.exe /implib:cmTC_3913d.lib /pdb:D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-pi6o75\\cmTC_3913d.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_3913d.dir/intermediate.manifest CMakeFiles\\cmTC_3913d.dir/manifest.res
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_853a7.dir\\objects1.rsp /out:cmTC_853a7.exe /implib:cmTC_853a7.lib /pdb:D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-iotd09\\cmTC_853a7.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_853a7.dir/intermediate.manifest CMakeFiles\\cmTC_853a7.dir/manifest.res
         MT:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_3913d.dir/intermediate.manifest /out:CMakeFiles\\cmTC_3913d.dir/embed.manifest /notify_update
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_853a7.dir/intermediate.manifest /out:CMakeFiles\\cmTC_853a7.dir/embed.manifest /notify_update
         RC Pass 2:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_3913d.dir/manifest.res CMakeFiles\\cmTC_3913d.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_853a7.dir/manifest.res CMakeFiles\\cmTC_853a7.dir/manifest.rc
         FINAL LINK:
-        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_3913d.dir\\objects1.rsp /out:cmTC_3913d.exe /implib:cmTC_3913d.lib /pdb:D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-pi6o75\\cmTC_3913d.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_3913d.dir/intermediate.manifest CMakeFiles\\cmTC_3913d.dir/manifest.res
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_853a7.dir\\objects1.rsp /out:cmTC_853a7.exe /implib:cmTC_853a7.lib /pdb:D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-iotd09\\cmTC_853a7.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_853a7.dir/intermediate.manifest CMakeFiles\\cmTC_853a7.dir/manifest.res
+        	C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Administrator/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-iotd09/cmTC_853a7.exe -installedDir C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/debug/bin -OutVariable out
         
       exitCode: 0
   -
@@ -151,37 +155,229 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jqvkkj"
-      binary: "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jqvkkj"
+      source: "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-96okzz"
+      binary: "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-96okzz"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/Administrator/.vcpkg-clion/vcpkg"
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jqvkkj
+        Change Dir: D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-96okzz
         
-        Run Build Command(s):C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_324d5\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_324d5.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_324d5.dir\\build
-        Building CXX object CMakeFiles/cmTC_324d5.dir/CMakeCXXCompilerABI.cpp.obj
-        	C:\\Users\\Administrator\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_324d5.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-jqvkkj --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\nmED9F.tmp
+        Run Build Command(s):C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_23776\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_23776.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_23776.dir\\build
+        Building CXX object CMakeFiles/cmTC_23776.dir/CMakeCXXCompilerABI.cpp.obj
+        	C:\\Users\\Administrator\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_23776.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-96okzz --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\nmAE8A.tmp
         CMakeCXXCompilerABI.cpp
-        Linking CXX executable cmTC_324d5.exe
-        	C:\\Users\\Administrator\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_324d5.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_324d5.dir\\objects1.rsp @C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\nmEDEE.tmp
+        Linking CXX executable cmTC_23776.exe
+        	C:\\Users\\Administrator\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_23776.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_23776.dir\\objects1.rsp @C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\nmAEE9.tmp
         Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_324d5.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_324d5.dir/embed.manifest
+        Create CMakeFiles\\cmTC_23776.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_23776.dir/embed.manifest
         RC Pass 1:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_324d5.dir/manifest.res CMakeFiles\\cmTC_324d5.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_23776.dir/manifest.res CMakeFiles\\cmTC_23776.dir/manifest.rc
         LINK Pass 1:
-        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_324d5.dir\\objects1.rsp /out:cmTC_324d5.exe /implib:cmTC_324d5.lib /pdb:D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-jqvkkj\\cmTC_324d5.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_324d5.dir/intermediate.manifest CMakeFiles\\cmTC_324d5.dir/manifest.res
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_23776.dir\\objects1.rsp /out:cmTC_23776.exe /implib:cmTC_23776.lib /pdb:D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-96okzz\\cmTC_23776.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_23776.dir/intermediate.manifest CMakeFiles\\cmTC_23776.dir/manifest.res
         MT:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_324d5.dir/intermediate.manifest /out:CMakeFiles\\cmTC_324d5.dir/embed.manifest /notify_update
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_23776.dir/intermediate.manifest /out:CMakeFiles\\cmTC_23776.dir/embed.manifest /notify_update
         RC Pass 2:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_324d5.dir/manifest.res CMakeFiles\\cmTC_324d5.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_23776.dir/manifest.res CMakeFiles\\cmTC_23776.dir/manifest.rc
         FINAL LINK:
-        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_324d5.dir\\objects1.rsp /out:cmTC_324d5.exe /implib:cmTC_324d5.lib /pdb:D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-jqvkkj\\cmTC_324d5.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_324d5.dir/intermediate.manifest CMakeFiles\\cmTC_324d5.dir/manifest.res
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_23776.dir\\objects1.rsp /out:cmTC_23776.exe /implib:cmTC_23776.lib /pdb:D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-96okzz\\cmTC_23776.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_23776.dir/intermediate.manifest CMakeFiles\\cmTC_23776.dir/manifest.res
+        	C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Administrator/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-96okzz/cmTC_23776.exe -installedDir C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckTypeSize.cmake:252 (check_include_file)"
+      - "cmake-build-debug/_deps/sfml-src/cmake/Config.cmake:10 (check_type_size)"
+      - "cmake-build-debug/_deps/sfml-src/CMakeLists.txt:48 (include)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6d0qms"
+      binary: "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6d0qms"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_OSX_ARCHITECTURES: "x86_64"
+      CMAKE_OSX_SYSROOT: ""
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/Administrator/.vcpkg-clion/vcpkg"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6d0qms
+        
+        Run Build Command(s):C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_9421c\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_9421c.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_9421c.dir\\build
+        Building C object CMakeFiles/cmTC_9421c.dir/CheckIncludeFile.c.obj
+        	C:\\Users\\Administrator\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_9421c.dir\\CheckIncludeFile.c.obj.d --working-dir=D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-6d0qms --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\nmB4D4.tmp
+        CheckIncludeFile.c
+        Linking C executable cmTC_9421c.exe
+        	C:\\Users\\Administrator\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_9421c.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_9421c.dir\\objects1.rsp @C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\nmB513.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_9421c.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_9421c.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_9421c.dir/manifest.res CMakeFiles\\cmTC_9421c.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_9421c.dir\\objects1.rsp /out:cmTC_9421c.exe /implib:cmTC_9421c.lib /pdb:D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-6d0qms\\cmTC_9421c.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_9421c.dir/intermediate.manifest CMakeFiles\\cmTC_9421c.dir/manifest.res
+        MT:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_9421c.dir/intermediate.manifest /out:CMakeFiles\\cmTC_9421c.dir/embed.manifest /notify_update
+        RC Pass 2:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_9421c.dir/manifest.res CMakeFiles\\cmTC_9421c.dir/manifest.rc
+        FINAL LINK:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_9421c.dir\\objects1.rsp /out:cmTC_9421c.exe /implib:cmTC_9421c.lib /pdb:D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-6d0qms\\cmTC_9421c.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_9421c.dir/intermediate.manifest CMakeFiles\\cmTC_9421c.dir/manifest.res
+        	C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Administrator/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6d0qms/cmTC_9421c.exe -installedDir C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckTypeSize.cmake:253 (check_include_file)"
+      - "cmake-build-debug/_deps/sfml-src/cmake/Config.cmake:10 (check_type_size)"
+      - "cmake-build-debug/_deps/sfml-src/CMakeLists.txt:48 (include)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4st960"
+      binary: "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4st960"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_OSX_ARCHITECTURES: "x86_64"
+      CMAKE_OSX_SYSROOT: ""
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/Administrator/.vcpkg-clion/vcpkg"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4st960
+        
+        Run Build Command(s):C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_2af07\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_2af07.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_2af07.dir\\build
+        Building C object CMakeFiles/cmTC_2af07.dir/CheckIncludeFile.c.obj
+        	C:\\Users\\Administrator\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_2af07.dir\\CheckIncludeFile.c.obj.d --working-dir=D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-4st960 --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\nmB820.tmp
+        CheckIncludeFile.c
+        Linking C executable cmTC_2af07.exe
+        	C:\\Users\\Administrator\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_2af07.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2af07.dir\\objects1.rsp @C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\nmB85F.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_2af07.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_2af07.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_2af07.dir/manifest.res CMakeFiles\\cmTC_2af07.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2af07.dir\\objects1.rsp /out:cmTC_2af07.exe /implib:cmTC_2af07.lib /pdb:D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-4st960\\cmTC_2af07.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_2af07.dir/intermediate.manifest CMakeFiles\\cmTC_2af07.dir/manifest.res
+        MT:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_2af07.dir/intermediate.manifest /out:CMakeFiles\\cmTC_2af07.dir/embed.manifest /notify_update
+        RC Pass 2:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_2af07.dir/manifest.res CMakeFiles\\cmTC_2af07.dir/manifest.rc
+        FINAL LINK:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2af07.dir\\objects1.rsp /out:cmTC_2af07.exe /implib:cmTC_2af07.lib /pdb:D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-4st960\\cmTC_2af07.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_2af07.dir/intermediate.manifest CMakeFiles\\cmTC_2af07.dir/manifest.res
+        	C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Administrator/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4st960/cmTC_2af07.exe -installedDir C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckTypeSize.cmake:254 (check_include_file)"
+      - "cmake-build-debug/_deps/sfml-src/cmake/Config.cmake:10 (check_type_size)"
+      - "cmake-build-debug/_deps/sfml-src/CMakeLists.txt:48 (include)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ajyotc"
+      binary: "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ajyotc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_OSX_ARCHITECTURES: "x86_64"
+      CMAKE_OSX_SYSROOT: ""
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/Administrator/.vcpkg-clion/vcpkg"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ajyotc
+        
+        Run Build Command(s):C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_2bccb\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_2bccb.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_2bccb.dir\\build
+        Building C object CMakeFiles/cmTC_2bccb.dir/CheckIncludeFile.c.obj
+        	C:\\Users\\Administrator\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_2bccb.dir\\CheckIncludeFile.c.obj.d --working-dir=D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-ajyotc --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\nmBB0E.tmp
+        CheckIncludeFile.c
+        Linking C executable cmTC_2bccb.exe
+        	C:\\Users\\Administrator\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_2bccb.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2bccb.dir\\objects1.rsp @C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\nmBB5D.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_2bccb.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_2bccb.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_2bccb.dir/manifest.res CMakeFiles\\cmTC_2bccb.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2bccb.dir\\objects1.rsp /out:cmTC_2bccb.exe /implib:cmTC_2bccb.lib /pdb:D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-ajyotc\\cmTC_2bccb.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_2bccb.dir/intermediate.manifest CMakeFiles\\cmTC_2bccb.dir/manifest.res
+        MT:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_2bccb.dir/intermediate.manifest /out:CMakeFiles\\cmTC_2bccb.dir/embed.manifest /notify_update
+        RC Pass 2:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_2bccb.dir/manifest.res CMakeFiles\\cmTC_2bccb.dir/manifest.rc
+        FINAL LINK:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2bccb.dir\\objects1.rsp /out:cmTC_2bccb.exe /implib:cmTC_2bccb.lib /pdb:D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-ajyotc\\cmTC_2bccb.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_2bccb.dir/intermediate.manifest CMakeFiles\\cmTC_2bccb.dir/manifest.res
+        	C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Administrator/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ajyotc/cmTC_2bccb.exe -installedDir C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckTypeSize.cmake:148 (try_compile)"
+      - "C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckTypeSize.cmake:273 (__check_type_size_impl)"
+      - "cmake-build-debug/_deps/sfml-src/cmake/Config.cmake:10 (check_type_size)"
+      - "cmake-build-debug/_deps/sfml-src/CMakeLists.txt:48 (include)"
+    checks:
+      - "Check size of void*"
+    directories:
+      source: "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sapx9j"
+      binary: "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sapx9j"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_OSX_ARCHITECTURES: "x86_64"
+      CMAKE_OSX_SYSROOT: ""
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Users/Administrator/.vcpkg-clion/vcpkg"
+    buildResult:
+      variable: "HAVE_SIZEOF_VOID_PTR"
+      cached: true
+      stdout: |
+        Change Dir: D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sapx9j
+        
+        Run Build Command(s):C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_99c60\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_99c60.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_99c60.dir\\build
+        Building C object CMakeFiles/cmTC_99c60.dir/SIZEOF_VOID_PTR.c.obj
+        	C:\\Users\\Administrator\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_99c60.dir\\SIZEOF_VOID_PTR.c.obj.d --working-dir=D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sapx9j --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\nmBDFC.tmp
+        SIZEOF_VOID_PTR.c
+        Linking C executable cmTC_99c60.exe
+        	C:\\Users\\Administrator\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_99c60.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_99c60.dir\\objects1.rsp @C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\nmBE3B.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_99c60.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_99c60.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_99c60.dir/manifest.res CMakeFiles\\cmTC_99c60.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_99c60.dir\\objects1.rsp /out:cmTC_99c60.exe /implib:cmTC_99c60.lib /pdb:D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sapx9j\\cmTC_99c60.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_99c60.dir/intermediate.manifest CMakeFiles\\cmTC_99c60.dir/manifest.res
+        MT:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_99c60.dir/intermediate.manifest /out:CMakeFiles\\cmTC_99c60.dir/embed.manifest /notify_update
+        RC Pass 2:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_99c60.dir/manifest.res CMakeFiles\\cmTC_99c60.dir/manifest.rc
+        FINAL LINK:
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_99c60.dir\\objects1.rsp /out:cmTC_99c60.exe /implib:cmTC_99c60.lib /pdb:D:\\Quinto_semestre\\Sim_Fisicas_AJSB\\Joints\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sapx9j\\cmTC_99c60.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_99c60.dir/intermediate.manifest CMakeFiles\\cmTC_99c60.dir/manifest.res
+        	C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Administrator/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sapx9j/cmTC_99c60.exe -installedDir C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/debug/bin -OutVariable out
         
       exitCode: 0
 ...

@@ -149,7 +149,7 @@ int main() {
     jointDef.localAxisA.Set(0.0f, 1.0f);
 
     //It's a motor! maybe...
-    jointDef.maxMotorTorque = 10.0f;
+    jointDef.maxMotorTorque = 3.0f;
     jointDef.motorSpeed = 0.0f;
     jointDef.enableMotor = true;
 
@@ -172,10 +172,10 @@ int main() {
         sf::Event event;
         while (window.pollEvent(event)) {
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
-                joint->SetMotorSpeed(joint->GetMotorSpeed()-(0.5f*b2_pi));
+                joint->SetMotorSpeed(joint->GetMotorSpeed()-(0.1f*b2_pi));
             }
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
-                joint->SetMotorSpeed(joint->GetMotorSpeed()+(0.5f*b2_pi));
+                joint->SetMotorSpeed(joint->GetMotorSpeed()+(0.1f*b2_pi));
             }
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
 

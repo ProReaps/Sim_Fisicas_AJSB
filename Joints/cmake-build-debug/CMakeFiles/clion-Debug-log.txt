@@ -1,25 +1,22 @@
-C:\Users\Administrator\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" -S D:\Quinto_semestre\Sim_Fisicas_AJSB\Joints -B D:\Quinto_semestre\Sim_Fisicas_AJSB\Joints\cmake-build-debug
--- The C compiler identification is MSVC 19.37.32825.0
--- The CXX compiler identification is MSVC 19.37.32825.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
-CMake Error: The current CMakeCache.txt directory D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-subbuild/CMakeCache.txt is different than the directory c:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-subbuild where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
-
-CMake Error at C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FetchContent.cmake:1610 (message):
-  CMake step for sfml failed: 1
+C:\Users\Administrator\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_TOOLCHAIN_FILE=C:\Users\Administrator\.vcpkg-clion\vcpkg\scripts\buildsystems\vcpkg.cmake -G "CodeBlocks - NMake Makefiles" -S D:\Quinto_semestre\Sim_Fisicas_AJSB\Joints -B D:\Quinto_semestre\Sim_Fisicas_AJSB\Joints\cmake-build-debug
+CMake Warning (dev) at C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (VORBIS)
+  does not match the name of the calling package (Vorbis).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
 Call Stack (most recent call first):
-  C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FetchContent.cmake:1762:EVAL:2 (__FetchContent_directPopulate)
-  C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FetchContent.cmake:1762 (cmake_language)
-  C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FetchContent.cmake:1976 (FetchContent_Populate)
-  CMakeLists.txt:7 (FETCHCONTENT_MAKEAVAILABLE)
+  cmake-build-debug/_deps/sfml-src/cmake/Modules/FindVorbis.cmake:25 (find_package_handle_standard_args)
+  C:/Users/Administrator/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)
+  cmake-build-debug/_deps/sfml-src/cmake/Macros.cmake:279 (find_package)
+  cmake-build-debug/_deps/sfml-src/src/SFML/Audio/CMakeLists.txt:70 (sfml_find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done (0.8s)
+-- Generating done (0.3s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_TOOLCHAIN_FILE
 
 
--- Configuring incomplete, errors occurred!
+-- Build files have been written to: D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug

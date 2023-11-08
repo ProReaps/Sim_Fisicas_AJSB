@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/src/SFML/Audio
+# Install script for directory: D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/src/SFML/Audio
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,6 +33,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "devel" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-build/lib/sfml-audio-s-d.lib")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-build/lib/sfml-audio-s-d.lib")
 endif()
 

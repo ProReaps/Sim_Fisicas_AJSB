@@ -1,0 +1,11 @@
+D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/include/SFML/Window/Sensor.hpp
+D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/include/SFML/Window/Export.hpp
+D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/include/SFML/Config.hpp
+D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/include/SFML/System/Vector3.hpp
+D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/include/SFML/System/Vector3.inl
+D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/include/SFML/System/Time.hpp
+D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/include/SFML/System/Export.hpp
+D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/src/SFML/Window/SensorManager.hpp
+D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/src/SFML/Window/SensorImpl.hpp
+D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/src/SFML/Window/Win32/SensorImpl.hpp
+D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/include/SFML/System/NonCopyable.hpp

@@ -1,3 +1,3 @@
-C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-subbuild/CMakeFiles/sfml-populate.dir
-C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-subbuild/CMakeFiles/edit_cache.dir
-C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-subbuild/CMakeFiles/rebuild_cache.dir
+D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-subbuild/CMakeFiles/sfml-populate.dir
+D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-subbuild/CMakeFiles/edit_cache.dir
+D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-subbuild/CMakeFiles/rebuild_cache.dir

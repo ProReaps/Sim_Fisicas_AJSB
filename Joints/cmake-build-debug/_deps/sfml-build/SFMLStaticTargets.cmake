@@ -55,7 +55,7 @@ add_library(sfml-system STATIC IMPORTED)
 
 set_target_properties(sfml-system PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "SFML_STATIC"
-  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/include"
+  INTERFACE_INCLUDE_DIRECTORIES "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/include"
   INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:winmm>"
 )
 
@@ -64,7 +64,7 @@ add_library(sfml-main STATIC IMPORTED)
 
 set_target_properties(sfml-main PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "SFML_STATIC"
-  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/include"
+  INTERFACE_INCLUDE_DIRECTORIES "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/include"
 )
 
 # Create imported target sfml-window
@@ -72,7 +72,7 @@ add_library(sfml-window STATIC IMPORTED)
 
 set_target_properties(sfml-window PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "SFML_STATIC"
-  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/include"
+  INTERFACE_INCLUDE_DIRECTORIES "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/include"
   INTERFACE_LINK_LIBRARIES "sfml-system;\$<LINK_ONLY:OpenGL>;\$<LINK_ONLY:winmm>;\$<LINK_ONLY:gdi32>"
 )
 
@@ -88,7 +88,7 @@ add_library(sfml-network STATIC IMPORTED)
 
 set_target_properties(sfml-network PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "SFML_STATIC"
-  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/include"
+  INTERFACE_INCLUDE_DIRECTORIES "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/include"
   INTERFACE_LINK_LIBRARIES "sfml-system;\$<LINK_ONLY:ws2_32>"
 )
 
@@ -97,7 +97,7 @@ add_library(sfml-graphics STATIC IMPORTED)
 
 set_target_properties(sfml-graphics PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "SFML_STATIC"
-  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/include"
+  INTERFACE_INCLUDE_DIRECTORIES "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/include"
   INTERFACE_LINK_LIBRARIES "sfml-window;\$<LINK_ONLY:OpenGL>;\$<LINK_ONLY:Freetype>"
 )
 
@@ -105,16 +105,16 @@ set_target_properties(sfml-graphics PROPERTIES
 add_library(Freetype INTERFACE IMPORTED)
 
 set_target_properties(Freetype PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/xXPro/.vcpkg-clion/vcpkg/installed/x64-windows/include"
-  INTERFACE_LINK_LIBRARIES "C:/Users/xXPro/.vcpkg-clion/vcpkg/installed/x64-windows/lib/freetype.lib"
+  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/include"
+  INTERFACE_LINK_LIBRARIES "C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/lib/freetype.lib"
 )
 
 # Create imported target OpenAL
 add_library(OpenAL INTERFACE IMPORTED)
 
 set_target_properties(OpenAL PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/xXPro/.vcpkg-clion/vcpkg/installed/x64-windows/include/AL"
-  INTERFACE_LINK_LIBRARIES "C:/Users/xXPro/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/OpenAL32.lib"
+  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/include/AL"
+  INTERFACE_LINK_LIBRARIES "C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/OpenAL32.lib"
 )
 
 # Create imported target Vorbis
@@ -122,8 +122,8 @@ add_library(Vorbis INTERFACE IMPORTED)
 
 set_target_properties(Vorbis PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "OV_EXCLUDE_STATIC_CALLBACKS"
-  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/xXPro/.vcpkg-clion/vcpkg/installed/x64-windows/include;C:/Users/xXPro/.vcpkg-clion/vcpkg/installed/x64-windows/include"
-  INTERFACE_LINK_LIBRARIES "C:/Users/xXPro/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/vorbisenc.lib;C:/Users/xXPro/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/vorbisfile.lib;C:/Users/xXPro/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/vorbis.lib;C:/Users/xXPro/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/ogg.lib"
+  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/include;C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/include"
+  INTERFACE_LINK_LIBRARIES "C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/vorbisenc.lib;C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/vorbisfile.lib;C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/vorbis.lib;C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/ogg.lib"
 )
 
 # Create imported target FLAC
@@ -131,8 +131,8 @@ add_library(FLAC INTERFACE IMPORTED)
 
 set_target_properties(FLAC PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "FLAC__NO_DLL"
-  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/xXPro/.vcpkg-clion/vcpkg/installed/x64-windows/include"
-  INTERFACE_LINK_LIBRARIES "C:/Users/xXPro/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/FLAC.lib"
+  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/include"
+  INTERFACE_LINK_LIBRARIES "C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/FLAC.lib"
 )
 
 # Create imported target sfml-audio
@@ -140,7 +140,7 @@ add_library(sfml-audio STATIC IMPORTED)
 
 set_target_properties(sfml-audio PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "SFML_STATIC"
-  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/include"
+  INTERFACE_INCLUDE_DIRECTORIES "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-src/include"
   INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:OpenAL>;sfml-system;\$<LINK_ONLY:Vorbis>;\$<LINK_ONLY:FLAC>"
 )
 
@@ -148,42 +148,42 @@ set_target_properties(sfml-audio PROPERTIES
 set_property(TARGET sfml-system APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(sfml-system PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-build/lib/sfml-system-s-d.lib"
+  IMPORTED_LOCATION_DEBUG "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-build/lib/sfml-system-s-d.lib"
   )
 
 # Import target "sfml-main" for configuration "Debug"
 set_property(TARGET sfml-main APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(sfml-main PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-build/lib/sfml-main-d.lib"
+  IMPORTED_LOCATION_DEBUG "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-build/lib/sfml-main-d.lib"
   )
 
 # Import target "sfml-window" for configuration "Debug"
 set_property(TARGET sfml-window APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(sfml-window PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-build/lib/sfml-window-s-d.lib"
+  IMPORTED_LOCATION_DEBUG "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-build/lib/sfml-window-s-d.lib"
   )
 
 # Import target "sfml-network" for configuration "Debug"
 set_property(TARGET sfml-network APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(sfml-network PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-build/lib/sfml-network-s-d.lib"
+  IMPORTED_LOCATION_DEBUG "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-build/lib/sfml-network-s-d.lib"
   )
 
 # Import target "sfml-graphics" for configuration "Debug"
 set_property(TARGET sfml-graphics APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(sfml-graphics PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-build/lib/sfml-graphics-s-d.lib"
+  IMPORTED_LOCATION_DEBUG "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-build/lib/sfml-graphics-s-d.lib"
   )
 
 # Import target "sfml-audio" for configuration "Debug"
 set_property(TARGET sfml-audio APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(sfml-audio PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "C:/Users/xXPro/OneDrive/Documents/GitHub/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-build/lib/sfml-audio-s-d.lib"
+  IMPORTED_LOCATION_DEBUG "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/cmake-build-debug/_deps/sfml-build/lib/sfml-audio-s-d.lib"
   )
 
 # This file does not depend on other imported targets which have
