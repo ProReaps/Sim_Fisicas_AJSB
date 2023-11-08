@@ -125,7 +125,7 @@ int main() {
     Cube cube2(world, 400, 325, 40.0f, 25.0f, sf::Color::Blue); //This one is NOT a wheel
 
     //This is the floor, we set the type as a static body
-    Cube floor(world, -50000, 750, 500000, 150, sf::Color::Green);
+    Cube floor(world, -50000, 500, 500000, 150, sf::Color::Green);
     floor.getBody()->SetType(b2_staticBody);
 
     //Set this one as a bit of a static one? We're just restricting rotation, not movement
@@ -206,11 +206,14 @@ int main() {
         cube2.update();
         circle.update();
 
+
         //Clear everything then draw it again
         window.clear();
 
+        floor.draw(window);
         cube2.draw(window);
         circle.draw(window);
+
 
         window.display();
     }
