@@ -39,7 +39,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "e:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Tema_2/cmake-build-debug"
+			"value" : "d:/Quinto_semestre/Sim_Fisicas_AJSB/Tema_2/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -78,6 +78,42 @@
 			"value" : "4"
 		},
 		{
+			"name" : "CMAKE_CODEBLOCKS_COMPILER_ID",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Id string of the compiler for the CodeBlocks IDE. Automatically detected when left empty"
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_CODEBLOCKS_EXECUTABLE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The CodeBlocks executable"
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "CMAKE_CODEBLOCKS_EXECUTABLE-NOTFOUND"
+		},
+		{
+			"name" : "CMAKE_CODEBLOCKS_MAKE_ARGUMENTS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Additional command line arguments when CodeBlocks invokes make. Enter e.g. -j<some_number> to get parallel builds"
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
 			"name" : "CMAKE_COLOR_DIAGNOSTICS",
 			"properties" : 
 			[
@@ -99,7 +135,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/USER/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cmake.exe"
+			"value" : "C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -111,7 +147,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/USER/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cpack.exe"
+			"value" : "C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -123,7 +159,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/USER/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/ctest.exe"
+			"value" : "C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -442,22 +478,6 @@
 			"value" : "/debug /INCREMENTAL"
 		},
 		{
-			"name" : "CMAKE_EXPORT_COMPILE_COMMANDS",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Enable/Disable output of compile commands during generation."
-				}
-			],
-			"type" : "BOOL",
-			"value" : ""
-		},
-		{
 			"name" : "CMAKE_EXTRA_GENERATOR",
 			"properties" : 
 			[
@@ -467,7 +487,31 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "CodeBlocks"
+		},
+		{
+			"name" : "CMAKE_EXTRA_GENERATOR_CXX_SYSTEM_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "CXX compiler system include directories"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\include;C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\ATLMFC\\include;C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\VS\\include;C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt;C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.22621.0\\\\um;C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.22621.0\\\\shared;C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.22621.0\\\\winrt;C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.22621.0\\\\cppwinrt"
+		},
+		{
+			"name" : "CMAKE_EXTRA_GENERATOR_C_SYSTEM_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "C compiler system include directories"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\include;C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\ATLMFC\\include;C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\VS\\include;C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\ucrt;C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.22621.0\\\\um;C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.22621.0\\\\shared;C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.22621.0\\\\winrt;C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.22621.0\\\\cppwinrt"
 		},
 		{
 			"name" : "CMAKE_FIND_PACKAGE_REDIRECTS_DIR",
@@ -479,7 +523,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Tema_2/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "D:/Quinto_semestre/Sim_Fisicas_AJSB/Tema_2/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -491,7 +535,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "Ninja"
+			"value" : "NMake Makefiles"
 		},
 		{
 			"name" : "CMAKE_GENERATOR_INSTANCE",
@@ -539,7 +583,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Tema_2"
+			"value" : "D:/Quinto_semestre/Sim_Fisicas_AJSB/Tema_2"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -574,12 +618,16 @@
 			"properties" : 
 			[
 				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Program used to build from makefiles."
 				}
 			],
-			"type" : "UNINITIALIZED",
-			"value" : "C:/Users/USER/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe"
+			"type" : "STRING",
+			"value" : "nmake"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -867,7 +915,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/USER/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26"
+			"value" : "C:/Users/Administrator/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1071,11 +1119,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "The CMake toolchain file"
 				}
 			],
-			"type" : "UNINITIALIZED",
-			"value" : "C:\\Users\\USER\\.vcpkg-clion\\vcpkg\\scripts\\buildsystems\\vcpkg.cmake"
+			"type" : "FILEPATH",
+			"value" : "C:/Users/Administrator/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake"
 		},
 		{
 			"name" : "CMAKE_VERBOSE_MAKEFILE",
@@ -1103,7 +1151,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Tema_2/cmake-build-debug"
+			"value" : "D:/Quinto_semestre/Sim_Fisicas_AJSB/Tema_2/cmake-build-debug"
 		},
 		{
 			"name" : "Tema_2_IS_TOP_LEVEL",
@@ -1127,7 +1175,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/A-Normal_files/Quinto_semestre/Sim_Fisicas_AJSB/Tema_2"
+			"value" : "D:/Quinto_semestre/Sim_Fisicas_AJSB/Tema_2"
 		},
 		{
 			"name" : "VCPKG_APPLOCAL_DEPS",
@@ -1151,7 +1199,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Users/USER/.vcpkg-clion/vcpkg/installed"
+			"value" : "C:/Users/Administrator/.vcpkg-clion/vcpkg/installed"
 		},
 		{
 			"name" : "VCPKG_MANIFEST_DIR",
@@ -1347,7 +1395,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/USER/.vcpkg-clion/vcpkg"
+			"value" : "C:/Users/Administrator/.vcpkg-clion/vcpkg"
 		},
 		{
 			"name" : "_VCPKG_INSTALLED_DIR",
@@ -1359,7 +1407,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Users/USER/.vcpkg-clion/vcpkg/installed"
+			"value" : "C:/Users/Administrator/.vcpkg-clion/vcpkg/installed"
 		},
 		{
 			"name" : "box2d_DIR",
@@ -1371,7 +1419,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Users/USER/.vcpkg-clion/vcpkg/installed/x64-windows/share/box2d"
+			"value" : "C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/share/box2d"
 		}
 	],
 	"kind" : "cache",

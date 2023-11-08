@@ -19,7 +19,7 @@
 		],
 		"files" : 
 		[
-			"C:/Users/USER/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"C:/Users/Administrator/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -61,7 +61,7 @@
 				{
 					"backtrace" : 3,
 					"isSystem" : true,
-					"path" : "C:/Users/USER/.vcpkg-clion/vcpkg/installed/x64-windows/include"
+					"path" : "C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/include"
 				}
 			],
 			"language" : "CXX",
@@ -94,7 +94,7 @@
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "C:\\Users\\USER\\.vcpkg-clion\\vcpkg\\installed\\x64-windows\\debug\\lib\\box2d.lib",
+				"fragment" : "C:\\Users\\Administrator\\.vcpkg-clion\\vcpkg\\installed\\x64-windows\\debug\\lib\\box2d.lib",
 				"role" : "libraries"
 			},
 			{
