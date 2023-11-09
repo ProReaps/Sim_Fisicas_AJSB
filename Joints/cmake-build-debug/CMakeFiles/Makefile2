@@ -205,8 +205,8 @@ _deps\sfml-build\src\SFML\Window\clean: _deps\sfml-build\src\SFML\Window\CMakeFi
 
 # All Build rule for target.
 CMakeFiles\Joints.dir\all: _deps\sfml-build\src\SFML\System\CMakeFiles\sfml-system.dir\all
-CMakeFiles\Joints.dir\all: _deps\sfml-build\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\all
 CMakeFiles\Joints.dir\all: _deps\sfml-build\src\SFML\Window\CMakeFiles\sfml-window.dir\all
+CMakeFiles\Joints.dir\all: _deps\sfml-build\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\all
 CMakeFiles\Joints.dir\all: _deps\sfml-build\src\SFML\Network\CMakeFiles\sfml-network.dir\all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Joints.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Joints.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Joints.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Joints.dir\build

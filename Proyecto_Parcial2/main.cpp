@@ -366,7 +366,6 @@ int main() {
     Circle DCI_PelotaInicio4(world, x_offset+25, y_offset+175, 10, sf::Color::Green, 3, 1);
 
 
-
     //Window loop
     while (window.isOpen()) {
         sf::Event event;
@@ -485,8 +484,6 @@ int main() {
         DBOX_PrismMove.draw(window);
         DBOX_PrismFixed.draw(window);
 #pragma endregion
-
-
 
         //Draw the interacting circles
         DCI_PelotaInicio.draw(window);

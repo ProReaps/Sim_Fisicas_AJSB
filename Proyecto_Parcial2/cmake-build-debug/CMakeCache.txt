@@ -299,6 +299,12 @@ SFML_BUILD_WINDOW:BOOL=TRUE
 // directory
 SFML_DEPENDENCIES_INSTALL_PREFIX:PATH=.
 
+//The directory containing a CMake configuration file for SFML.
+SFML_DIR:PATH=C:/Users/Administrator/.vcpkg-clion/vcpkg/installed/x64-windows/share/sfml
+
+//Path to a file.
+SFML_DOC_DIR:PATH=SFML_DOC_DIR-NOTFOUND
+
 //True to generate PDB debug symbols, FALSE otherwise. Requires
 // CMake 3.1.
 SFML_GENERATE_PDB:BOOL=TRUE
@@ -485,7 +491,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib
