@@ -201,13 +201,13 @@ int main() {
     b2World world(gravity);
 
     //Create the bodies using the cube and circle classes, syntax being:
-    //  - Static body (cube)       - SCU_Name
+    //  - Static body (box)        - SBOX_Name
     //  - Static body (circle)     - SCI_Name
 
-    //  - Kinematic body (cube)    - KCU_Name
+    //  - Kinematic body (box)     - KBOX_Name
     //  - Kinematic body (circle)  - KCI_Name
 
-    //  - Dynamic body (cube)      - DCU_Name
+    //  - Dynamic body (box)       - DBOX_Name
     //  - Dynamic body (circle)    - DCI_Name
 
     //Offset to move the entire machine
@@ -215,42 +215,56 @@ int main() {
     float y_offset =150;
 
     //We create the static bodies that'll be part of the machine's structure (static walls and floors for the machine)
-    #pragma region Static_Body_Creation //////
+#pragma region Structure_Static_Body_Creation //////
     //Start ramp
-    Cube SCU_Stage1(world, x_offset-2.5f, y_offset+205, 300, 10, sf::Color::White, 2,1, 30);
+    Cube SBOX_Stage1(world, x_offset-2.5f, y_offset+205, 300, 10, sf::Color::White, 2,1, 30);
     //Walls
-    Cube SCU_Stage2(world, x_offset+125, y_offset+375, 10, 200, sf::Color::White, 2, 1, 0);
-    Cube SCU_Stage3(world, x_offset+200, y_offset+375, 10, 200, sf::Color::White, 2, 1, 0);
-    Cube SCU_Stage4(world, x_offset+275, y_offset+375, 10, 200, sf::Color::White, 2, 1, 0);
+    Cube SBOX_Stage2(world, x_offset+125, y_offset+375, 10, 200, sf::Color::White, 2, 1, 0);
+    Cube SBOX_Stage3(world, x_offset+200, y_offset+375, 10, 200, sf::Color::White, 2, 1, 0);
+    Cube SBOX_Stage4(world, x_offset+275, y_offset+375, 10, 200, sf::Color::White, 2, 1, 0);
     //Floor for the walls, just so it looks neat
-    Cube SCU_Stage5(world, x_offset+200, y_offset+480, 180, 10, sf::Color::White, 2, 1, 0);
+    Cube SBOX_Stage5(world, x_offset+200, y_offset+480, 180, 10, sf::Color::White, 2, 1, 0);
     //Flat runway after pulley joint
-    Cube SCU_Stage6(world, x_offset+375, y_offset+280, 200, 10, sf::Color::White, 2, 1, 0);
+    Cube SBOX_Stage6(world, x_offset+375, y_offset+280, 200, 10, sf::Color::White, 2, 1, 0);
     //Wall that will stop the advance of the distance/weld joint
-    Cube SCU_Stage7(world, x_offset+475, y_offset+375, 10, 200, sf::Color::White, 2, 1, 0);
+    Cube SBOX_Stage7(world, x_offset+475, y_offset+375, 10, 200, sf::Color::White, 2, 1, 0);
     //Area where the second ball will be propelled
-    Cube SCU_Stage8(world, x_offset+630, y_offset+480, 340, 10, sf::Color::White, 2, 1, 0);
+    Cube SBOX_Stage8(world, x_offset+630, y_offset+480, 340, 10, sf::Color::White, 2, 1, 0);
     //Final ramp
-    Cube SCU_Stage9(world, x_offset+915, y_offset+405, 300, 10, sf::Color::White, 2,1, 330);
+    Cube SBOX_Stage9(world, x_offset+915, y_offset+405, 300, 10, sf::Color::White, 2,1, 330);
     //Something to make it look like this is on a table
-    Cube SCU_Stage10(world, x_offset+500, y_offset+515, 1000, 60, sf::Color::White, 2, 1, 0);
+    Cube SBOX_Stage10(world, x_offset+500, y_offset+515, 1000, 60, sf::Color::White, 2, 1, 0);
 
     //Update the static walls and floors for the machine
     //We update all the static bodies declared here to avoid doing so in every cycle
-    SCU_Stage1.update();
-    SCU_Stage2.update();
-    SCU_Stage3.update();
-    SCU_Stage4.update();
-    SCU_Stage5.update();
-    SCU_Stage6.update();
-    SCU_Stage7.update();
-    SCU_Stage8.update();
-    SCU_Stage9.update();
-    SCU_Stage10.update();
+    SBOX_Stage1.update();
+    SBOX_Stage2.update();
+    SBOX_Stage3.update();
+    SBOX_Stage4.update();
+    SBOX_Stage5.update();
+    SBOX_Stage6.update();
+    SBOX_Stage7.update();
+    SBOX_Stage8.update();
+    SBOX_Stage9.update();
+    SBOX_Stage10.update();
 #pragma endregion
 
+    //Creation of the objects involved in pulley joint
+#pragma region PulleyJoint_Creation
+    //Static anchor bodies for the pulley (from cube class)
+    Cube SBOX_PulleyAnchor1(world, x_offset+162, y_offset+375, 10, 200, sf::Color::Yellow, 2, 1, 0);
+    Cube SBOX_PulleyAnchor2(world, x_offset+237, y_offset+375, 10, 200, sf::Color::Yellow, 2, 1, 0);
+
+    SBOX_PulleyAnchor1.update();
+    SBOX_PulleyAnchor2.update();
+
+#pragma endregion
+
+
+
+
     //Create dynamic box
-    Cube DCU_Try(world, x_offset+10, y_offset+0, 20, 20, sf::Color::White, 3, 2, 0);
+    Cube DBOX_Try(world, x_offset+10, y_offset+0, 20, 20, sf::Color::White, 3, 2, 0);
 
     //Create the dynamic circles that are used as the movable objects that interact with others in the machine
     Circle DCI_PelotaInicio(world, x_offset+50, y_offset+100, 15, sf::Color::Red, 3, 4);
@@ -288,7 +302,7 @@ int main() {
         }
         world.Step(1 / 60.f, 8, 3);
 
-        DCU_Try.update();
+        DBOX_Try.update();
 
         //Update the dynamic circles that are used as the movable objects that interact with others in the machine
         DCI_PelotaInicio.update();
@@ -297,7 +311,29 @@ int main() {
         //Clear everything then draw it again
         window.clear();
 
-        DCU_Try.draw(window);
+        //Draw the static objects that form the shape of the machine
+# pragma region Draw Stage
+        SBOX_Stage1.draw(window);
+        SBOX_Stage2.draw(window);
+        SBOX_Stage3.draw(window);
+        SBOX_Stage4.draw(window);
+        SBOX_Stage5.draw(window);
+        SBOX_Stage6.draw(window);
+        SBOX_Stage7.draw(window);
+        SBOX_Stage8.draw(window);
+        SBOX_Stage9.draw(window);
+        SBOX_Stage10.draw(window);
+#pragma endregion
+
+#pragma region Draw Pulley joint
+        SBOX_PulleyAnchor1.draw(window);
+        SBOX_PulleyAnchor2.draw(window);
+
+
+#pragma endregion
+
+
+        DBOX_Try.draw(window);
 
         //Draw the interacting circles
         DCI_PelotaInicio.draw(window);
