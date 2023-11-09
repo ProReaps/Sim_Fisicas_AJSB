@@ -8,7 +8,7 @@ FETCHCONTENT_MAKEAVAILABLE(SFML)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Joints WheelJoint.cpp)
+add_executable(Joints PrismaticJoint.cpp)
 
 find_package(box2d CONFIG REQUIRED)
 target_link_libraries(Joints PRIVATE box2d::box2d sfml-system sfml-network sfml-graphics sfml-window)

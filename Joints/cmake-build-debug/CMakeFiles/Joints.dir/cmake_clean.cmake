@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Joints.dir/WheelJoint.cpp.obj"
-  "CMakeFiles/Joints.dir/WheelJoint.cpp.obj.d"
+  "CMakeFiles/Joints.dir/PrismaticJoint.cpp.obj"
+  "CMakeFiles/Joints.dir/PrismaticJoint.cpp.obj.d"
   "Joints.exe"
   "Joints.exe.manifest"
   "Joints.lib"

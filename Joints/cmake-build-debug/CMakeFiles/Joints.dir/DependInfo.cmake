@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/WheelJoint.cpp" "CMakeFiles/Joints.dir/WheelJoint.cpp.obj" "msvc" "CMakeFiles/Joints.dir/WheelJoint.cpp.obj.d"
+  "D:/Quinto_semestre/Sim_Fisicas_AJSB/Joints/PrismaticJoint.cpp" "CMakeFiles/Joints.dir/PrismaticJoint.cpp.obj" "msvc" "CMakeFiles/Joints.dir/PrismaticJoint.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

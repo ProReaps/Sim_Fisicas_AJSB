@@ -211,29 +211,30 @@ int main() {
     //  - Dynamic body (circle)    - DCI_Name
 
     //Offset to move the entire machine
-    float x_offset =0;
-    float y_offset =150;
+    float x_offset =200;
+    float y_offset =200;
 
     //We create the static bodies that'll be part of the machine's structure (static walls and floors for the machine)
-#pragma region Structure_Static_Body_Creation //////
+#pragma region Structure_Static_Body_Creation
     //Start ramp
-    Cube SBOX_Stage1(world, x_offset-2.5f, y_offset+205, 300, 10, sf::Color::White, 2,1, 30);
+    Cube SBOX_Stage1(world, x_offset-2.5f, y_offset+205, 300, 10, sf::Color::White, 1,1, 30);
     //Walls
-    Cube SBOX_Stage2(world, x_offset+125, y_offset+375, 10, 200, sf::Color::White, 2, 1, 0);
-    Cube SBOX_Stage3(world, x_offset+200, y_offset+375, 10, 200, sf::Color::White, 2, 1, 0);
-    Cube SBOX_Stage4(world, x_offset+275, y_offset+375, 10, 200, sf::Color::White, 2, 1, 0);
+    Cube SBOX_Stage2(world, x_offset+125, y_offset+350, 10, 150, sf::Color::White, 1, 1, 0);
+    Cube SBOX_Stage3(world, x_offset+200, y_offset+365, 10, 220, sf::Color::White, 1, 1, 0);
+    Cube SBOX_Stage4(world, x_offset+275, y_offset+375, 10, 200, sf::Color::White, 1, 1, 0);
     //Floor for the walls, just so it looks neat
-    Cube SBOX_Stage5(world, x_offset+200, y_offset+480, 180, 10, sf::Color::White, 2, 1, 0);
+    Cube SBOX_Stage5(world, x_offset+200, y_offset+480, 180, 10, sf::Color::White, 1, 1, 0);
     //Flat runway after pulley joint
-    Cube SBOX_Stage6(world, x_offset+375, y_offset+280, 200, 10, sf::Color::White, 2, 1, 0);
+    Cube SBOX_Stage6(world, x_offset+375, y_offset+280, 200, 10, sf::Color::White, 1, 1, 0);
     //Wall that will stop the advance of the distance/weld joint
-    Cube SBOX_Stage7(world, x_offset+475, y_offset+375, 10, 200, sf::Color::White, 2, 1, 0);
+    Cube SBOX_Stage7(world, x_offset+475, y_offset+300, 10, 50, sf::Color::White, 1, 1, 0);
     //Area where the second ball will be propelled
-    Cube SBOX_Stage8(world, x_offset+630, y_offset+480, 340, 10, sf::Color::White, 2, 1, 0);
-    //Final ramp
-    Cube SBOX_Stage9(world, x_offset+915, y_offset+405, 300, 10, sf::Color::White, 2,1, 330);
+    Cube SBOX_Stage8(world, x_offset+630, y_offset+480, 340, 10, sf::Color::White, 1, 1, 0);
     //Something to make it look like this is on a table
-    Cube SBOX_Stage10(world, x_offset+500, y_offset+515, 1000, 60, sf::Color::White, 2, 1, 0);
+    Cube SBOX_Stage9(world, x_offset+500, y_offset+515, 10000, 60, sf::Color::White, 1, 1, 0);
+
+    //Wall that will stop the advance of the pulley ball
+    Cube SBOX_Stage10(world, x_offset+530, y_offset+225, 10, 200, sf::Color::White, 1, 1, 0);
 
     //Update the static walls and floors for the machine
     //We update all the static bodies declared here to avoid doing so in every cycle
@@ -249,26 +250,123 @@ int main() {
     SBOX_Stage10.update();
 #pragma endregion
 
-    //Creation of the objects involved in pulley joint
+    //Top shelf area, this part will slide to the right, allowing a box to fall by the end of the contraption
+#pragma region Shelf body creation
+    //Static body case
+    Cube SBOX_ShelfSide1(world, x_offset+709, y_offset-100, 10, 100, sf::Color::White, 1, 1, 0);
+    Cube SBOX_ShelfSide2(world, x_offset+761, y_offset-100, 10, 100, sf::Color::White, 1, 1, 0);
+    SBOX_ShelfSide1.update();
+    SBOX_ShelfSide2.update();
+
+    //Sliding structure
+    Cube KBOX_ShelfSlide1(world, x_offset+715, y_offset-50, 40, 10, sf::Color::Cyan, 2, 1, 0);
+    Cube KBOX_ShelfSlide2(world, x_offset+755, y_offset-50, 40, 10, sf::Color::Cyan, 2, 1, 0);
+    //This is a dynamic body, the slide will take the velocity from it and apply it to itself
+    Circle DCI_ShelfActivator(world, x_offset+50, y_offset+480, 10, sf::Color::Cyan, 3, 1);
+    //Create the dynamic box that'll get dropped in
+    Cube DBOX_Drop(world, x_offset+735, y_offset-80, 40, 40, sf::Color::Red, 3, 0.25f, 0);
+#pragma endregion
+
+    //Creation of the objects involved in pulley joint, and pulley joint itself
 #pragma region PulleyJoint_Creation
     //Static anchor bodies for the pulley (from cube class)
-    Cube SBOX_PulleyAnchor1(world, x_offset+162, y_offset+375, 10, 200, sf::Color::Yellow, 2, 1, 0);
-    Cube SBOX_PulleyAnchor2(world, x_offset+237, y_offset+375, 10, 200, sf::Color::Yellow, 2, 1, 0);
-
+    Cube SBOX_PulleyAnchor1(world, x_offset+162, y_offset+230, 50, 10, sf::Color::Yellow, 2, 1, 30);
+    Cube SBOX_PulleyAnchor2(world, x_offset+237, y_offset+240, 50, 10, sf::Color::Yellow, 2, 1, 330);
+    //Update the static objects, so they get drawn every frame in the same position (because they don't move)
     SBOX_PulleyAnchor1.update();
     SBOX_PulleyAnchor2.update();
+
+    //Create the dynamic bodies from cube class, these will be our pulley platforms
+    Cube DBOX_PulleyPlatform1(world, x_offset+162, y_offset+300, 60, 10, sf::Color::Yellow, 3, 1, 0);
+    Cube DBOX_PulleyPlatform2(world, x_offset+237, y_offset+450, 60, 10, sf::Color::Yellow, 3, 1, 0);
+    //Set the rotation to fixed, so they don't start spinning when things hit them
+    DBOX_PulleyPlatform1.getBody()->SetFixedRotation(true);
+    DBOX_PulleyPlatform2.getBody()->SetFixedRotation(true);
+
+    //Define and create the joint in world space
+    b2PulleyJointDef PulleyJointDef;
+    PulleyJointDef.Initialize(DBOX_PulleyPlatform1.getBody(), DBOX_PulleyPlatform2.getBody(),   //both platform bodies
+                              SBOX_PulleyAnchor1.getBody()->GetWorldCenter(), SBOX_PulleyAnchor2.getBody()->GetWorldCenter(),   //both anchor world centers
+                              DBOX_PulleyPlatform1.getBody()->GetWorldCenter(), DBOX_PulleyPlatform2.getBody()->GetWorldCenter(), //both platform world centers
+                              1);   //Ratio
+    world.CreateJoint(&PulleyJointDef);
+
+    //Create the ball that'll start on the pulley, it'll go up it in when simulated
+    Circle DCI_PulleyBall(world, x_offset+245, y_offset+450, 15, sf::Color::Red, 3, 2);
+#pragma endregion
+
+    //Creation of the objects involved in revolute joint, and the joint itself
+#pragma region Revolute joint creation
+    //Revolute joint bodies, we set gravity scale to 0, so they don't instantly fall
+    Circle DCI_RevAnchor(world, x_offset+300, y_offset+210, 7.5f, sf::Color::Blue, 3, 20);
+    DCI_RevAnchor.getBody()->SetGravityScale(0.0f);
+    Cube DBOX_RevArm(world, x_offset+300, y_offset+210, 80, 10, sf::Color::Blue, 3, 20, 1);
+    DBOX_RevArm.getBody()->SetGravityScale(0.0f);
+
+    //Declare the joint definition variable (maybe that is what this is, could be wrong)
+    b2RevoluteJointDef RevjointDef;
+    RevjointDef.Initialize(DCI_RevAnchor.getBody(),DBOX_RevArm.getBody(),DCI_RevAnchor.getBody()->GetWorldCenter());
+
+    //Other important parameters, trying to turn the joint into a motor
+    RevjointDef.enableMotor = true;
+    RevjointDef.maxMotorTorque = 10.0f*100000;
+    RevjointDef.motorSpeed = -2.0f*10000;
+
+    //Actually create the joint in world space
+    b2RevoluteJoint* Revjoint = (b2RevoluteJoint*)world.CreateJoint(&RevjointDef);
+#pragma endregion
+
+    //Creation of the objects involved in prismatic joint, and the joint itself
+#pragma region Prism joint
+    //Create the bodies from the cube class
+    Cube DBOX_PrismMove(world, x_offset+500, y_offset+375, 50, 10, sf::Color::Cyan, 3, 0.5f, 0);
+    Cube DBOX_PrismFixed(world, x_offset+400, y_offset+375, 10, 10, sf::Color::Cyan, 3, 0.5f, 0);
+    //Set these so it won't move on its own
+    DBOX_PrismMove.getBody()->SetGravityScale(0.0f);
+    DBOX_PrismFixed.getBody()->SetGravityScale(0.0f);
+    //We don't want this part of the prismatic joint to rotate
+    DBOX_PrismMove.getBody()->SetFixedRotation(true);
+    DBOX_PrismFixed.getBody()->SetFixedRotation(true);
+
+    //Declare the joint definition variable
+    b2PrismaticJointDef PrismjointDef;
+
+    b2Vec2 worldAxis(0.0f, 1.0f);
+    //Other necessary variables
+    PrismjointDef.Initialize(DBOX_PrismMove.getBody(), DBOX_PrismFixed.getBody(),
+                             DBOX_PrismMove.getBody()->GetWorldCenter(), worldAxis);
+    PrismjointDef.localAxisA.Set(0,1);
+    PrismjointDef.upperTranslation = 50.0f;
+    PrismjointDef.lowerTranslation = 50.0f;
+    PrismjointDef.enableLimit = true;
+    PrismjointDef.collideConnected = false;
+    //PrismjointDef.localAnchorA.Set(-(DBOX_PrismMove.getSizeX()/(SCALE*2)), 0.0f);
+    //PrismjointDef.localAnchorB.Set(DBOX_PrismFixed.getSizeX()/(SCALE*2)+120.0f, 0.0f);
+
+    b2PrismaticJoint* Prismjoint = (b2PrismaticJoint*)world.CreateJoint(&PrismjointDef);
+#pragma endregion
+
+    //Creation of joint between parts of the Prismatic joint and the gear joint
+#pragma region Distance joint creation
+    b2DistanceJointDef DistjointDef;
+    DistjointDef.Initialize(DBOX_PrismMove.getBody(), DBOX_PulleyPlatform2.getBody(), DBOX_PrismMove.getBody()->GetPosition(), DBOX_PulleyPlatform2.getBody()->GetPosition());
+
+    DistjointDef.collideConnected = false;
+    DistjointDef.stiffness = 10;
+
+    //Actually create the joint in world space
+    b2DistanceJoint* joint = (b2DistanceJoint*)world.CreateJoint(&DistjointDef);
 
 #pragma endregion
 
 
-
-
-    //Create dynamic box
-    Cube DBOX_Try(world, x_offset+10, y_offset+0, 20, 20, sf::Color::White, 3, 2, 0);
-
     //Create the dynamic circles that are used as the movable objects that interact with others in the machine
-    Circle DCI_PelotaInicio(world, x_offset+50, y_offset+100, 15, sf::Color::Red, 3, 4);
-    Circle DCI_PelotaInicio2(world, x_offset+50, y_offset-100, 10, sf::Color::Red, 3, 2);
+    Circle DCI_PelotaInicio(world, x_offset+50, y_offset+50, 20, sf::Color::Red, 3, 4);
+    Circle DCI_PelotaInicio2(world, x_offset+50, y_offset+150, 20, sf::Color::Red, 3, 3);
+    Circle DCI_PelotaInicio3(world, x_offset+50, y_offset+0, 15, sf::Color::Red, 3, 3);
+    Circle DCI_PelotaInicio4(world, x_offset+25, y_offset+175, 10, sf::Color::Green, 3, 1);
+
+
 
     //Window loop
     while (window.isOpen()) {
@@ -302,11 +400,43 @@ int main() {
         }
         world.Step(1 / 60.f, 8, 3);
 
-        DBOX_Try.update();
+#pragma region Update dynamic 'and' kinematic shelf components
+        //Slide sets the linear velocity from the activator to its own variable
+        KBOX_ShelfSlide1.getBody()->SetLinearVelocity(b2Vec2( DCI_ShelfActivator.getBody()->GetLinearVelocity().x*2, 0.0f));
+        KBOX_ShelfSlide2.getBody()->SetLinearVelocity(b2Vec2(-DCI_ShelfActivator.getBody()->GetLinearVelocity().x*2, 0.0f));
+        //Update all the shelf components
+        KBOX_ShelfSlide1.update();
+        KBOX_ShelfSlide2.update();
+
+        DCI_ShelfActivator.update();
+        DBOX_Drop.update();
+#pragma endregion
+
+#pragma region Update all the dynamic bodies associated with the pulley joint
+        //Update the pulley joint platforms
+        DBOX_PulleyPlatform1.update();
+        DBOX_PulleyPlatform2.update();
+        DCI_PulleyBall.update();
+#pragma endregion
+
+#pragma region Update revolute joint
+    DBOX_RevArm.update();
+    DCI_RevAnchor.update();
+#pragma endregion
+
+#pragma region Update prismatic joint
+        DBOX_PrismMove.update();
+        DBOX_PrismFixed.update();
+#pragma endregion
+
 
         //Update the dynamic circles that are used as the movable objects that interact with others in the machine
         DCI_PelotaInicio.update();
         DCI_PelotaInicio2.update();
+        DCI_PelotaInicio3.update();
+        DCI_PelotaInicio4.update();
+
+
 
         //Clear everything then draw it again
         window.clear();
@@ -325,19 +455,46 @@ int main() {
         SBOX_Stage10.draw(window);
 #pragma endregion
 
-#pragma region Draw Pulley joint
+#pragma region Draw shelf components
+        //draw the static components of the shelf
+        SBOX_ShelfSide1.draw(window);
+        SBOX_ShelfSide2.draw(window);
+        //Draw the kinematic 'and' dynamic part of the shelf
+        KBOX_ShelfSlide1.draw(window);
+        KBOX_ShelfSlide2.draw(window);
+        DCI_ShelfActivator.draw(window);
+        DBOX_Drop.draw(window);
+#pragma endregion
+
+#pragma region Draw Pulley joint associated components
+        //Anchors
         SBOX_PulleyAnchor1.draw(window);
         SBOX_PulleyAnchor2.draw(window);
+        //Platforms
+        DBOX_PulleyPlatform1.draw(window);
+        DBOX_PulleyPlatform2.draw(window);
+        //Ball that starts on it
+        DCI_PulleyBall.draw(window);
+#pragma endregion
 
+#pragma region Draw revolute joint
+        DBOX_RevArm.draw(window);
+        DCI_RevAnchor.draw(window);
+#pragma endregion
 
+#pragma region Draw prismatic joint
+        DBOX_PrismMove.draw(window);
+        DBOX_PrismFixed.draw(window);
 #pragma endregion
 
 
-        DBOX_Try.draw(window);
 
         //Draw the interacting circles
         DCI_PelotaInicio.draw(window);
         DCI_PelotaInicio2.draw(window);
+        DCI_PelotaInicio3.draw(window);
+        DCI_PelotaInicio4.draw(window);
+
 
         window.display();
 

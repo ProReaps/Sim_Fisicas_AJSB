@@ -229,29 +229,29 @@ sfml-audio\fast:
 	$(MAKE) $(MAKESILENT) -f _deps\sfml-build\src\SFML\Audio\CMakeFiles\sfml-audio.dir\build.make /nologo -$(MAKEFLAGS) _deps\sfml-build\src\SFML\Audio\CMakeFiles\sfml-audio.dir\build
 .PHONY : sfml-audio\fast
 
-WheelJoint.obj: WheelJoint.cpp.obj
-.PHONY : WheelJoint.obj
+PrismaticJoint.obj: PrismaticJoint.cpp.obj
+.PHONY : PrismaticJoint.obj
 
 # target to build an object file
-WheelJoint.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Joints.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Joints.dir\WheelJoint.cpp.obj
-.PHONY : WheelJoint.cpp.obj
+PrismaticJoint.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Joints.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Joints.dir\PrismaticJoint.cpp.obj
+.PHONY : PrismaticJoint.cpp.obj
 
-WheelJoint.i: WheelJoint.cpp.i
-.PHONY : WheelJoint.i
+PrismaticJoint.i: PrismaticJoint.cpp.i
+.PHONY : PrismaticJoint.i
 
 # target to preprocess a source file
-WheelJoint.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Joints.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Joints.dir\WheelJoint.cpp.i
-.PHONY : WheelJoint.cpp.i
+PrismaticJoint.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Joints.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Joints.dir\PrismaticJoint.cpp.i
+.PHONY : PrismaticJoint.cpp.i
 
-WheelJoint.s: WheelJoint.cpp.s
-.PHONY : WheelJoint.s
+PrismaticJoint.s: PrismaticJoint.cpp.s
+.PHONY : PrismaticJoint.s
 
 # target to generate assembly for a file
-WheelJoint.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Joints.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Joints.dir\WheelJoint.cpp.s
-.PHONY : WheelJoint.cpp.s
+PrismaticJoint.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Joints.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Joints.dir\PrismaticJoint.cpp.s
+.PHONY : PrismaticJoint.cpp.s
 
 # Help Target
 help:
@@ -271,9 +271,9 @@ help:
 	@echo ... sfml-network
 	@echo ... sfml-system
 	@echo ... sfml-window
-	@echo ... WheelJoint.obj
-	@echo ... WheelJoint.i
-	@echo ... WheelJoint.s
+	@echo ... PrismaticJoint.obj
+	@echo ... PrismaticJoint.i
+	@echo ... PrismaticJoint.s
 .PHONY : help
 
 

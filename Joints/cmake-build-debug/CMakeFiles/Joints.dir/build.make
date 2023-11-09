@@ -58,34 +58,34 @@ include CMakeFiles\Joints.dir\progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles\Joints.dir\flags.make
 
-CMakeFiles\Joints.dir\WheelJoint.cpp.obj: CMakeFiles\Joints.dir\flags.make
-CMakeFiles\Joints.dir\WheelJoint.cpp.obj: D:\Quinto_semestre\Sim_Fisicas_AJSB\Joints\WheelJoint.cpp
-CMakeFiles\Joints.dir\WheelJoint.cpp.obj: CMakeFiles\Joints.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Quinto_semestre\Sim_Fisicas_AJSB\Joints\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Joints.dir/WheelJoint.cpp.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\Joints.dir\WheelJoint.cpp.obj.d --working-dir=D:\Quinto_semestre\Sim_Fisicas_AJSB\Joints\cmake-build-debug --filter-prefix="Note: including file: " -- C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1437~1.328\bin\Hostx64\x64\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\Joints.dir\WheelJoint.cpp.obj /FdCMakeFiles\Joints.dir\ /FS -c D:\Quinto_semestre\Sim_Fisicas_AJSB\Joints\WheelJoint.cpp
+CMakeFiles\Joints.dir\PrismaticJoint.cpp.obj: CMakeFiles\Joints.dir\flags.make
+CMakeFiles\Joints.dir\PrismaticJoint.cpp.obj: D:\Quinto_semestre\Sim_Fisicas_AJSB\Joints\PrismaticJoint.cpp
+CMakeFiles\Joints.dir\PrismaticJoint.cpp.obj: CMakeFiles\Joints.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Quinto_semestre\Sim_Fisicas_AJSB\Joints\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Joints.dir/PrismaticJoint.cpp.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\Joints.dir\PrismaticJoint.cpp.obj.d --working-dir=D:\Quinto_semestre\Sim_Fisicas_AJSB\Joints\cmake-build-debug --filter-prefix="Note: including file: " -- C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1437~1.328\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\Joints.dir\PrismaticJoint.cpp.obj /FdCMakeFiles\Joints.dir\ /FS -c D:\Quinto_semestre\Sim_Fisicas_AJSB\Joints\PrismaticJoint.cpp
 <<
 
-CMakeFiles\Joints.dir\WheelJoint.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Joints.dir/WheelJoint.cpp.i"
-	C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1437~1.328\bin\Hostx64\x64\cl.exe > CMakeFiles\Joints.dir\WheelJoint.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Quinto_semestre\Sim_Fisicas_AJSB\Joints\WheelJoint.cpp
+CMakeFiles\Joints.dir\PrismaticJoint.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Joints.dir/PrismaticJoint.cpp.i"
+	C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1437~1.328\bin\Hostx64\x64\cl.exe > CMakeFiles\Joints.dir\PrismaticJoint.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Quinto_semestre\Sim_Fisicas_AJSB\Joints\PrismaticJoint.cpp
 <<
 
-CMakeFiles\Joints.dir\WheelJoint.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Joints.dir/WheelJoint.cpp.s"
+CMakeFiles\Joints.dir\PrismaticJoint.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Joints.dir/PrismaticJoint.cpp.s"
 	C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1437~1.328\bin\Hostx64\x64\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Joints.dir\WheelJoint.cpp.s /c D:\Quinto_semestre\Sim_Fisicas_AJSB\Joints\WheelJoint.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Joints.dir\PrismaticJoint.cpp.s /c D:\Quinto_semestre\Sim_Fisicas_AJSB\Joints\PrismaticJoint.cpp
 <<
 
 # Object files for target Joints
 Joints_OBJECTS = \
-"CMakeFiles\Joints.dir\WheelJoint.cpp.obj"
+"CMakeFiles\Joints.dir\PrismaticJoint.cpp.obj"
 
 # External object files for target Joints
 Joints_EXTERNAL_OBJECTS =
 
-Joints.exe: CMakeFiles\Joints.dir\WheelJoint.cpp.obj
+Joints.exe: CMakeFiles\Joints.dir\PrismaticJoint.cpp.obj
 Joints.exe: CMakeFiles\Joints.dir\build.make
 Joints.exe: C:\Users\Administrator\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\box2d.lib
 Joints.exe: _deps\sfml-build\lib\sfml-system-s-d.lib

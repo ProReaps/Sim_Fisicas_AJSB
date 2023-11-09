@@ -93,10 +93,7 @@ int main() {
     jointDef.localAnchorA.Set(-(cube.getSizeX()/(SCALE*2)), -2.3f);
     jointDef.localAnchorB.Set(cube2.getSizeX()/(SCALE*2)+1.0f, -1.9f);
 
-    //Other important parameters, trying to turn the joint into a motor
-    jointDef.maxMotorForce = 1.0f;
-    jointDef.motorSpeed = 0.0f;
-    jointDef.enableMotor = true;
+
 
     //Actually create the joint in world space
     b2PrismaticJoint* joint = (b2PrismaticJoint*)world.CreateJoint(&jointDef);
