@@ -359,7 +359,6 @@ int main() {
 
 #pragma endregion
 
-
     //Create the dynamic circles that are used as the movable objects that interact with others in the machine
     Circle DCI_PelotaInicio(world, x_offset+50, y_offset+50, 20, sf::Color::Red, 3, 4);
     Circle DCI_PelotaInicio2(world, x_offset+50, y_offset+150, 20, sf::Color::Red, 3, 3);
@@ -498,7 +497,7 @@ int main() {
 
         window.display();
 
-        //Wait for 50 milliseconds every time the window is drawn to
+        //Wait for x milliseconds every time the window is drawn
         std::this_thread::sleep_for(std::chrono::nanoseconds(timeJumps*timeMultiplier));
     }
     return 0;
